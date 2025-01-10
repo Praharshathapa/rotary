@@ -23,11 +23,11 @@ export default function LoadingScreen() {
         >
           <div className="text-center">
             <Image
-              src="/placeholder.svg?height=150&width=150"
+              src="/images/loading.svg"
               alt="Rotary Logo"
               width={150}
               height={150}
-              className="mx-auto mb-8 animate-spin"
+              className="mx-auto mb-8 animate-rotate" 
             />
             <h2 className="text-3xl font-bold text-white mb-4">
               Rotary Club of Kathmandu North
@@ -39,4 +39,3 @@ export default function LoadingScreen() {
     </AnimatePresence>
   )
 }
-

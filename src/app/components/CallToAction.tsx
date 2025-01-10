@@ -15,7 +15,7 @@ export default function CallToAction() {
             <Link href="/contact">Contact Us</Link>
           </Button>
           <Button asChild size="lg">
-            <Link href="/members">Join Rotary</Link>
+            <Link href="/contact">Join Rotary</Link>
           </Button>
         </div>
       </div>
