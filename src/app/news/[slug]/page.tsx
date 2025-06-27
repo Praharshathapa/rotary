@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from 'next/image'
 
 // This would typically come from a database or API
 const newsArticles = [
@@ -41,7 +42,7 @@ export default function NewsArticle({ params }: { params: { slug: string } }) {
           <p className="text-gray-500 mt-2">{article.date}</p>
         </CardHeader>
         <CardContent>
-          <img 
+          <Image
             src={article.image} 
             alt={article.title} 
             className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg mb-6"

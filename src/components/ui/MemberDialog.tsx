@@ -1,12 +1,13 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
+import Image from "next/image";
 
 interface Member {
   name: string;
   role: string;
   image: string;
-  bio: string;
-  contact: string;
+  bio?: string;
+  contact?: string;
 }
 
 interface MemberDialogProps {
@@ -26,7 +27,7 @@ export function MemberDialog({ member }: MemberDialogProps) {
           <DialogTitle>{member.name}</DialogTitle>
         </DialogHeader>
         <div className="grid gap-4 py-4">
-          <img
+          <Image
             src={member.image}
             alt={member.name}
             className="w-32 h-32 rounded-full mx-auto"

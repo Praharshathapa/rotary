@@ -1,7 +1,7 @@
-import Carousel from './components/Carousel'
-import FeaturedProjects from './components/FeaturedProjects'
-import UpcomingEvents from './components/UpcomingEvents'
-import CallToAction from './components/CallToAction'
+import Carousel from './_components/Carousel'
+import FeaturedProjects from './_components/FeaturedProjects'
+import UpcomingEvents from './_components/UpcomingEvents'
+import CallToAction from './_components/CallToAction'
 
 const carouselItems = [
   {

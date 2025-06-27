@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from 'next/link'
+import Image from "next/image"
 
 export default function News() {
   const newsItems = [
@@ -35,7 +36,7 @@ export default function News() {
           <Card key={index}>
             <div className="md:flex">
               <div className="md:w-1/3">
-                <img
+                <Image
                   src={item.image}
                   alt={item.title}
                   className="w-full h-48 object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none"

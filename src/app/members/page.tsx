@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { MemberDialog } from "../../components/ui/MemberDialog"
+import Image from "next/image"
 
 export default function Members() {
   const memberCategories = [
@@ -144,7 +145,7 @@ export default function Members() {
                 <Card key={index}>
                   <CardContent className="pt-4 sm:pt-6">
                     <div className="text-center">
-                      <img
+                      <Image
                         src={member.image}
                         alt={member.name}
                         className="w-24 h-24 sm:w-32 sm:h-32 rounded-full mx-auto mb-3 sm:mb-4"
