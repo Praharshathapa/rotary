@@ -10,21 +10,21 @@ export default function News() {
       title: "Annual Charity Gala Success",
       date: "January 5, 2024",
       content: "Our annual charity gala raised over $50,000 for local education initiatives...",
-      image: "/placeholder.svg?height=300&width=400"
+      image: ""
     },
     {
       slug: "new-community-health-project",
       title: "New Community Health Project",
       date: "December 28, 2023",
       content: "Launching a new health project to serve remote communities...",
-      image: "/placeholder.svg?height=300&width=400"
+      image: ""
     },
     {
       slug: "youth-leadership-workshop",
       title: "Youth Leadership Workshop",
       date: "December 15, 2023",
       content: "Successfully conducted a leadership workshop for 100 young leaders...",
-      image: "/placeholder.svg?height=300&width=400"
+      image: ""
     }
   ]
 
