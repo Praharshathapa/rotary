@@ -1,25 +1,31 @@
-import Carousel from './_components/Carousel'
-import FeaturedProjects from './_components/FeaturedProjects'
-import UpcomingEvents from './_components/UpcomingEvents'
-import CallToAction from './_components/CallToAction'
+// Home.tsx
+import Carousel from "./_components/Carousel";
+import FeaturedProjects from "./_components/FeaturedProjects";
+import UpcomingEvents from "./_components/UpcomingEvents";
+import CallToAction from "./_components/CallToAction";
 
 const carouselItems = [
   {
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/sliders/welcome rotary.jpg",
     title: "Welcome to Rotary Club of Kathmandu North",
-    description: "Serving our community since 1995"
+    description: "Serving our community since 1995",
   },
   {
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/sliders/first meeting .jpg",
+    title: "First Meeting of the Year",
+    description: "First meeting of the year with our new president",
+  },
+  {
+    image: "/sliders/join our project.jpg",
     title: "Join Our Next Project",
-    description: "Make a difference in your community"
+    description: "Make a difference in your community",
   },
   {
-    image: "/placeholder.svg?height=600&width=1200",
-    title: "Rotary International Convention 2024",
-    description: "Join us in Singapore this June"
-  }
-]
+    image: "/sliders/welcome.png",
+    title: "Meet Our President",
+    description: "Learn about our leadership and vision",
+  },
+];
 
 export default function Home() {
   return (
@@ -29,6 +35,5 @@ export default function Home() {
       <UpcomingEvents />
       <CallToAction />
     </div>
-  )
+  );
 }
-

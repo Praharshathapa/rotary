@@ -1,25 +1,25 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { cn } from "@/lib/utils"
-import { Menu, X } from 'lucide-react'
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
-  const pathname = usePathname()
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const pathname = usePathname();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: 'Home', href: '/' },
-    { label: 'Club Profile', href: '/club-profile' },
-    { label: 'Members', href: '/members' },
-    { label: 'News', href: '/news' },
-    { label: 'Projects', href: '/projects' },
-    { label: 'Contact', href: '/contact' },
-  ]
+    { label: "Home", href: "/" },
+    { label: "Club Profile", href: "/club-profile" },
+    { label: "Members", href: "/members" },
+    // { label: 'News', href: '/news' },
+    { label: "Projects", href: "/projects" },
+    { label: "Contact", href: "/contact" },
+  ];
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -35,8 +35,12 @@ export default function Header() {
               className="w-12 h-12 sm:w-16 sm:h-16"
             />
             <div className="hidden sm:block">
-              <h1 className="text-lg sm:text-xl font-bold text-blue-900">Rotary Club of Kathmandu North</h1>
-              <p className="text-xs sm:text-sm text-gray-600">District: 3292, Club Number: 29915</p>
+              <h1 className="text-lg sm:text-xl font-bold text-blue-900">
+                Rotary Club of Kathmandu North
+              </h1>
+              <p className="text-xs sm:text-sm text-gray-600">
+                District: 3292, Club Number: 29915
+              </p>
             </div>
           </Link>
 
@@ -44,7 +48,7 @@ export default function Header() {
             <ul className="flex space-x-1 text-sm lg:text-base">
               {navItems.map((item) => (
                 <li key={item.label}>
-                  <Link 
+                  <Link
                     href={item.href}
                     className={cn(
                       "px-3 py-2 rounded-md text-sm font-medium transition-colors",
@@ -66,7 +70,11 @@ export default function Header() {
             className="sm:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X className="h-5 w-5 sm:h-6 sm:w-6" /> : <Menu className="h-5 w-5 sm:h-6 sm:w-6" />}
+            {isMenuOpen ? (
+              <X className="h-5 w-5 sm:h-6 sm:w-6" />
+            ) : (
+              <Menu className="h-5 w-5 sm:h-6 sm:w-6" />
+            )}
             <span className="sr-only">Toggle menu</span>
           </Button>
         </div>
@@ -95,6 +103,5 @@ export default function Header() {
         </div>
       )}
     </header>
-  )
+  );
 }
-

@@ -6,19 +6,19 @@ import Link from 'next/link'
 const events = [
   {
     title: "Annual Charity Gala",
-    date: "September 15, 2024",
+    date: "September 15, 2025",
     description: "Join us for an evening of fundraising and celebration.",
     location: "Hotel Yak & Yeti, Kathmandu"
   },
   {
     title: "Community Clean-up Drive",
-    date: "October 2, 2024",
+    date: "October 2, 2025",
     description: "Let's work together to keep our city clean and green.",
     location: "Thamel, Kathmandu"
   },
   {
     title: "Youth Leadership Workshop",
-    date: "November 10, 2024",
+    date: "November 10, 2025",
     description: "Empowering the next generation of leaders in our community.",
     location: "Rotary Center, Kathmandu"
   }
