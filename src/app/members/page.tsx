@@ -765,7 +765,7 @@ export default function Members() {
           height: 200,
         },
         {
-          name: "Rotaract Club of Kathmandu North East",
+          name: "Rotaract Club of Reliance College",
           role: "Chartered on 2023-01-01",
           image:
             "/images/clubmembers/rotaract_club_of_kathmandu_north_east.jpg",
@@ -773,7 +773,15 @@ export default function Members() {
           height: 200,
         },
         {
-          name: "Rotaract Club of Kathmandu North West",
+          name: "Rotaract Club of Kantipur Dental College",
+          role: "Chartered on 2023-01-01",
+          image:
+            "/images/clubmembers/rotaract_club_of_kathmandu_north_west.jpg",
+          width: 200,
+          height: 200,
+        },
+        {
+          name: "Rotaract Club of Kathmandu Medical College",
           role: "Chartered on 2023-01-01",
           image:
             "/images/clubmembers/rotaract_club_of_kathmandu_north_west.jpg",
