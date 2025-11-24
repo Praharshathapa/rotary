@@ -12,7 +12,7 @@ export default function Header() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
-  const galleryRef = useRef<HTMLDivElement>(null);
+  const galleryRef = useRef<HTMLLIElement>(null);
 
   const navItems = [
     { label: "Home", href: "/" },
