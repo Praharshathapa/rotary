@@ -26,6 +26,12 @@ const newsArticles = [
   },
 ];
 
+export async function generateStaticParams() {
+  return newsArticles.map((article) => ({
+    slug: article.slug,
+  }));
+}
+
 export default async function NewsArticle({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const article = newsArticles.find((article) => article.slug === slug);

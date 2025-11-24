@@ -6,12 +6,21 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectDetailProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-export default function ProjectDetail({ params }: ProjectDetailProps) {
+export async function generateStaticParams() {
+  return [
+    { slug: "pcos-awareness" },
+    { slug: "dengue-awareness" },
+    { slug: "medical-accessories" },
+  ];
+}
+
+export default async function ProjectDetail({ params }: ProjectDetailProps) {
+  const { slug } = await params;
   // Project data - in a real app, this would come from a database or API
   const projects = {
     "pcos-awareness": {
@@ -109,7 +118,7 @@ export default function ProjectDetail({ params }: ProjectDetailProps) {
     }
   };
 
-  const project = projects[params.slug as keyof typeof projects];
+  const project = projects[slug as keyof typeof projects];
 
   if (!project) {
     return (

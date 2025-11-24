@@ -2,9 +2,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 
+type ProjectPhoto = {
+  image: string;
+  title: string;
+  category: string;
+  date?: string;
+  description?: string;
+  link?: string;
+};
+
 export default function ProjectsGallery() {
   // Education Support (Service Projects) photos
-  const educationSupport = [
+  const educationSupport: ProjectPhoto[] = [
     { image: "/Education Support(Service Projects)/page_112_img_001.png", title: "Education Support Project", category: "Education Support" },
     { image: "/Education Support(Service Projects)/page_112_img_002.png", title: "Education Support Project", category: "Education Support" },
     { image: "/Education Support(Service Projects)/page_112_img_003.png", title: "Education Support Project", category: "Education Support" },
@@ -26,7 +35,7 @@ export default function ProjectsGallery() {
   ];
 
   // Global Grant photos
-  const globalGrant = [
+  const globalGrant: ProjectPhoto[] = [
     { image: "/global grant/page_114_img_001.png", title: "Global Grant Project", category: "Global Grant" },
     { image: "/global grant/page_114_img_002.png", title: "Global Grant Project", category: "Global Grant" },
     { image: "/global grant/page_114_img_003.png", title: "Global Grant Project", category: "Global Grant" },
@@ -40,7 +49,7 @@ export default function ProjectsGallery() {
   ];
 
   // Existing project photos with links
-  const featuredProjects = [
+  const featuredProjects: ProjectPhoto[] = [
     {
       title: "Talk program on PCOS",
       image: "/images/Projects/PCOS.jpg",
