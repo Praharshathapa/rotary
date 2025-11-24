@@ -8,22 +8,22 @@ import CallToAction from "./_components/CallToAction";
 
 const carouselItems = [
   {
-    image: "/sliders/welcome rotary.jpg",
+    image: "/rotary/sliders/welcome rotary.jpg",
     title: "Welcome to Rotary Club of Kathmandu North",
     description: "Serving our community since 1995",
   },
   {
-    image: "/sliders/first meeting .jpg",
+    image: "/rotary/sliders/first meeting .jpg",
     title: "First Meeting of the Year",
     description: "First meeting of the year with our new president",
   },
   {
-    image: "/sliders/join our project.jpg",
+    image: "/rotary/sliders/join our project.jpg",
     title: "Join Our Next Project",
     description: "Make a difference in your community",
   },
   {
-    image: "/sliders/welcome.png",
+    image: "/rotary/sliders/welcome.png",
     title: "Meet Our President",
     description: "Learn about our leadership and vision",
   },

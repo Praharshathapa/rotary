@@ -4,34 +4,34 @@ import Image from "next/image";
 export default function CelebrationsGallery() {
   // Charters Day and DG Visit photos
   const chartersDay = [
-    { image: "/Charters day and DG visit/page_109_img_001.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_109_img_002.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_109_img_003.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_109_img_004.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_109_img_005.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_109_img_006.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_109_img_007.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_109_img_008.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_110_img_001.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_110_img_002.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_110_img_003.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_110_img_004.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_110_img_005.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_110_img_006.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_110_img_007.png", title: "Charter Day and DG Visit", category: "Charter Day" },
-    { image: "/Charters day and DG visit/page_110_img_008.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_109_img_001.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_109_img_002.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_109_img_003.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_109_img_004.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_109_img_005.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_109_img_006.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_109_img_007.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_109_img_008.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_110_img_001.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_110_img_002.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_110_img_003.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_110_img_004.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_110_img_005.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_110_img_006.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_110_img_007.png", title: "Charter Day and DG Visit", category: "Charter Day" },
+    { image: "/rotary/Charters day and DG visit/page_110_img_008.png", title: "Charter Day and DG Visit", category: "Charter Day" },
   ];
 
   // Picnic and Social Gathering photos
   const picnicPhotos = [
-    { image: "/picnic and social gathering/page_119_img_001.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
-    { image: "/picnic and social gathering/page_119_img_002.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
-    { image: "/picnic and social gathering/page_119_img_003.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
-    { image: "/picnic and social gathering/page_119_img_004.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
-    { image: "/picnic and social gathering/page_119_img_005.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
-    { image: "/picnic and social gathering/page_119_img_006.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
-    { image: "/picnic and social gathering/page_119_img_007.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
-    { image: "/picnic and social gathering/page_119_img_008.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
+    { image: "/rotary/picnic and social gathering/page_119_img_001.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
+    { image: "/rotary/picnic and social gathering/page_119_img_002.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
+    { image: "/rotary/picnic and social gathering/page_119_img_003.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
+    { image: "/rotary/picnic and social gathering/page_119_img_004.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
+    { image: "/rotary/picnic and social gathering/page_119_img_005.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
+    { image: "/rotary/picnic and social gathering/page_119_img_006.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
+    { image: "/rotary/picnic and social gathering/page_119_img_007.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
+    { image: "/rotary/picnic and social gathering/page_119_img_008.png", title: "Picnic and Social Gathering", category: "Social Gathering" },
   ];
 
   const celebrationPhotos = [...chartersDay, ...picnicPhotos];
