@@ -12,6 +12,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Calendar, MapPin, Users, Award, Heart, Globe } from 'lucide-react';
 
 export default function RotaryGoalsPage() {
   return (
@@ -48,7 +51,7 @@ export default function RotaryGoalsPage() {
             <CardContent className="text-[rgb(var(--text-secondary))] leading-relaxed">
               Chartered in 1995, the Rotary Club of Kathmandu North has driven
               sustainable change for three decades. Through local service and
-              global initiatives, we uphold Rotary’s highest ethical standards
+              global initiatives, we uphold Rotary's highest ethical standards
               while fostering fellowship and innovation.
             </CardContent>
           </Card>
@@ -66,6 +69,118 @@ export default function RotaryGoalsPage() {
               <Stat label="Lives Impacted" value="10,000+" />
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      {/* Club Information ----------------------------------------- */}
+      <section className="container mx-auto max-w-7xl px-6 pb-12">
+        <div className="grid lg:grid-cols-3 gap-8">
+          <Card className="card-glass">
+            <CardHeader>
+              <CardTitle className="text-xl font-semibold flex items-center">
+                <Calendar className="h-5 w-5 mr-2 text-[rgb(var(--brand-blue))]" />
+                Meeting Information
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <div className="flex justify-between">
+                <span className="text-[rgb(var(--text-secondary))]">Day:</span>
+                <span className="font-semibold">Every Saturday</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-[rgb(var(--text-secondary))]">Time:</span>
+                <span className="font-semibold">7:00 AM - 8:30 AM</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-[rgb(var(--text-secondary))]">Venue:</span>
+                <span className="font-semibold">Hotel Yak & Yeti</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-[rgb(var(--text-secondary))]">Location:</span>
+                <span className="font-semibold">Durbar Marg, Kathmandu</span>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="card-glass">
+            <CardHeader>
+              <CardTitle className="text-xl font-semibold flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-[rgb(var(--brand-blue))]" />
+                Club Details
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <div className="flex justify-between">
+                <span className="text-[rgb(var(--text-secondary))]">Club ID:</span>
+                <span className="font-semibold">RCKN</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-[rgb(var(--text-secondary))]">District:</span>
+                <span className="font-semibold">3292</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-[rgb(var(--text-secondary))]">Zone:</span>
+                <span className="font-semibold">Zone 6</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-[rgb(var(--text-secondary))]">Classification:</span>
+                <span className="font-semibold">Community</span>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="card-glass">
+            <CardHeader>
+              <CardTitle className="text-xl font-semibold flex items-center">
+                <Award className="h-5 w-5 mr-2 text-[rgb(var(--brand-blue))]" />
+                Recent Achievements
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="text-[rgb(var(--text-secondary))]">2024:</span>
+                <Badge variant="secondary">Best Service Project</Badge>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-[rgb(var(--text-secondary))]">2023:</span>
+                <Badge variant="secondary">Membership Growth Award</Badge>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-[rgb(var(--text-secondary))]">2022:</span>
+                <Badge variant="secondary">Community Impact Award</Badge>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-[rgb(var(--text-secondary))]">2021:</span>
+                <Badge variant="secondary">Innovation in Service</Badge>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Areas of Focus ----------------------------------------- */}
+      <section className="container mx-auto max-w-7xl px-6 pb-12">
+        <h2 className="text-3xl font-bold text-center mb-8 text-[rgb(var(--brand-blue))]">
+          Our Areas of Focus
+        </h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {areasOfFocus.map((area, index) => (
+            <Card key={index} className="card-glass hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center mb-2">
+                  {area.icon}
+                  <CardTitle className="text-lg font-semibold ml-2">
+                    {area.title}
+                  </CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-[rgb(var(--text-secondary))] text-sm leading-relaxed">
+                  {area.description}
+                </p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </section>
 
@@ -301,4 +416,42 @@ const presidentGoals = [
       'Introduce "Rotary Movie Night" fundraiser series',
     ],
   },
+];
+
+const areasOfFocus = [
+  {
+    title: "Promoting Peace",
+    icon: <Heart className="h-6 w-6 text-red-500" />,
+    description: "We work to resolve conflicts and promote international understanding, goodwill, and peace."
+  },
+  {
+    title: "Fighting Disease",
+    icon: <Heart className="h-6 w-6 text-red-500" />,
+    description: "We improve access to affordable and culturally sensitive health care in underserved areas."
+  },
+  {
+    title: "Providing Clean Water",
+    icon: <Globe className="h-6 w-6 text-blue-500" />,
+    description: "We support solutions that bring safe water and sanitation to communities worldwide."
+  },
+  {
+    title: "Saving Mothers & Children",
+    icon: <Heart className="h-6 w-6 text-pink-500" />,
+    description: "We expand access to quality care so mothers and children everywhere can have the same opportunities for a healthy future."
+  },
+  {
+    title: "Supporting Education",
+    icon: <Users className="h-6 w-6 text-green-500" />,
+    description: "We strengthen the capacity of communities to support basic education and literacy."
+  },
+  {
+    title: "Growing Local Economies",
+    icon: <Award className="h-6 w-6 text-yellow-500" />,
+    description: "We create opportunities for community members to develop their own solutions to local economic problems."
+  },
+  {
+    title: "Protecting Environment",
+    icon: <Globe className="h-6 w-6 text-green-500" />,
+    description: "We support activities that strengthen the conservation and protection of natural resources."
+  }
 ];

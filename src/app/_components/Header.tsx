@@ -1,16 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Header() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const galleryRef = useRef<HTMLDivElement>(null);
 
   const navItems = [
     { label: "Home", href: "/" },
@@ -20,6 +22,27 @@ export default function Header() {
     { label: "Projects", href: "/projects" },
     { label: "Contact", href: "/contact" },
   ];
+
+  const gallerySubsections = [
+    { label: "Events Photos", href: "/gallery/events" },
+    { label: "Celebrations", href: "/gallery/celebrations" },
+    { label: "Projects Gallery", href: "/gallery/projects" },
+    { label: "Meetings", href: "/gallery/meetings" },
+  ];
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (galleryRef.current && !galleryRef.current.contains(event.target as Node)) {
+        setIsGalleryOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -45,7 +68,7 @@ export default function Header() {
           </Link>
 
           <nav className="hidden sm:block">
-            <ul className="flex space-x-1 text-sm lg:text-base">
+            <ul className="flex space-x-1 text-sm lg:text-base items-center">
               {navItems.map((item) => (
                 <li key={item.label}>
                   <Link
@@ -61,6 +84,40 @@ export default function Header() {
                   </Link>
                 </li>
               ))}
+              {/* Gallery Dropdown */}
+              <li className="relative" ref={galleryRef}>
+                <button
+                  onClick={() => setIsGalleryOpen(!isGalleryOpen)}
+                  className={cn(
+                    "px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-1",
+                    pathname?.startsWith("/gallery")
+                      ? "bg-blue-900 text-white"
+                      : "text-blue-900 hover:bg-blue-100 hover:text-blue-900"
+                  )}
+                >
+                  Gallery
+                  <ChevronDown className={cn("h-4 w-4 transition-transform", isGalleryOpen && "rotate-180")} />
+                </button>
+                {isGalleryOpen && (
+                  <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-md shadow-lg border border-gray-200 py-1 z-50">
+                    {gallerySubsections.map((subsection) => (
+                      <Link
+                        key={subsection.label}
+                        href={subsection.href}
+                        onClick={() => setIsGalleryOpen(false)}
+                        className={cn(
+                          "block px-4 py-2 text-sm transition-colors",
+                          pathname === subsection.href
+                            ? "bg-blue-900 text-white"
+                            : "text-blue-900 hover:bg-blue-100 hover:text-blue-900"
+                        )}
+                      >
+                        {subsection.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </li>
             </ul>
           </nav>
 
@@ -99,6 +156,43 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
+            {/* Gallery in mobile menu */}
+            <div className="mt-2">
+              <button
+                onClick={() => setIsGalleryOpen(!isGalleryOpen)}
+                className={cn(
+                  "w-full flex items-center justify-between px-3 py-2 rounded-md text-base font-medium",
+                  pathname?.startsWith("/gallery")
+                    ? "bg-blue-900 text-white"
+                    : "text-blue-900 hover:bg-blue-100 hover:text-blue-900"
+                )}
+              >
+                Gallery
+                <ChevronDown className={cn("h-4 w-4 transition-transform", isGalleryOpen && "rotate-180")} />
+              </button>
+              {isGalleryOpen && (
+                <div className="pl-4 mt-1 space-y-1">
+                  {gallerySubsections.map((subsection) => (
+                    <Link
+                      key={subsection.label}
+                      href={subsection.href}
+                      onClick={() => {
+                        setIsGalleryOpen(false);
+                        setIsMenuOpen(false);
+                      }}
+                      className={cn(
+                        "block px-3 py-2 rounded-md text-sm",
+                        pathname === subsection.href
+                          ? "bg-blue-900 text-white"
+                          : "text-blue-900 hover:bg-blue-100 hover:text-blue-900"
+                      )}
+                    >
+                      {subsection.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           </nav>
         </div>
       )}

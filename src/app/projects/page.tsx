@@ -2,10 +2,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Projects() {
   const projects = [
     {
+      id: "pcos-awareness",
       title: "Talk program on PCOS",
       status: "Completed",
       description:
@@ -14,14 +16,16 @@ export default function Projects() {
       progress: 100,
     },
     {
+      id: "dengue-awareness",
       title: "Dengue Awareness Campaign",
-      status: "Completed",
+      status: "Ongoing",
       description:
         "Dengue awareness programs have  been conducted and still going on in Dang and Kathmandu by Rotary Club of Kathmandu North led by Rtn. Dr. Sugat Adhikari.",
       image: "/images/Projects/Dengue Awarness.jpg",
-      progress: 100,
+      progress: 75,
     },
     {
+      id: "medical-accessories",
       title: "Medical Accessories and laptop handover program",
       status: "Completed",
       description:
@@ -69,7 +73,9 @@ export default function Projects() {
                   style={{ width: `${project.progress}%` }}
                 ></div>
               </div>
-              <Button className="w-full">Learn More</Button>
+              <Button asChild className="w-full">
+                <Link href={`/projects/${project.id}`}>Learn More</Link>
+              </Button>
             </CardContent>
           </Card>
         ))}
