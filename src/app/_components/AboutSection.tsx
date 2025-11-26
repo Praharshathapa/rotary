@@ -8,7 +8,7 @@ export default function AboutSection() {
   const stats = [
     {
       icon: <Users className="h-8 w-8 text-blue-600" />,
-      number: "50+",
+      number: "40+",
       label: "Active Members",
       description: "Dedicated volunteers serving our community"
     },
