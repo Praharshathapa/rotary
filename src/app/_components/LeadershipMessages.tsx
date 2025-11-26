@@ -79,7 +79,7 @@ export default function LeadershipMessages() {
                   &quot;{message.message}&quot;
                 </p>
                 <Button asChild variant="outline" className="w-full">
-                  <Link href={message.pdf} target="_blank" rel="noopener noreferrer">
+                  <Link href="/club-profile#club-profile">
                     <Download className="h-4 w-4 mr-2" />
                     Read Full Message
                   </Link>

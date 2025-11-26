@@ -1,7 +1,7 @@
 // Home.tsx
 import Carousel from "./_components/Carousel";
 import AboutSection from "./_components/AboutSection";
-import FeaturedProjects from "./_components/FeaturedProjects";
+import GalleryPhotos from "./_components/GalleryPhotos";
 import LeadershipMessages from "./_components/LeadershipMessages";
 import UpcomingEvents from "./_components/UpcomingEvents";
 import CallToAction from "./_components/CallToAction";
@@ -34,7 +34,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <Carousel items={carouselItems} />
       <AboutSection />
-      <FeaturedProjects />
+      <GalleryPhotos />
       <LeadershipMessages />
       <UpcomingEvents />
       <CallToAction />

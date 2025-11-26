@@ -1,13 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { MemberDialog } from "../../components/ui/MemberDialog";
+import { RotaractClubDialog } from "../../components/ui/RotaractClubDialog";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Image from "next/image";
 
 export default function Members() {
   const memberCategories = [
     {
       id: "executive",
-      label: "Executive Committee",
+      label: "Executive Committee RY 2025-2026",
       members: [
         {
           name: "Rtn. Pradeep Thapa",
@@ -16,25 +18,43 @@ export default function Members() {
           width: 200,
           height: 200,
           bio: "Experienced leader with over 15 years in community service. Passionate about youth development and education initiatives.",
-          contact: "pradeep.thapa@rotarykathmanduorth.org",
+          contact: "pradeep@rising.com.np",
           riid: "8997821",
-          classification: "Business",
-          joinDate: "2015",
-          achievements: ["Paul Harris Fellow", "District Service Award 2023"]
+          classification: "Man Power, Management",
+          joinDate: "31st August 2014",
+          inductionDate: "31st August 2014",
+          birthday: "23th September",
+          weddingDay: "23th April",
+          spouse: "Hasina Thapa",
+          tel: "4370641 R",
+          cell: "9851069094 C",
+          address: "Ekatabasti, Mahankal, Kathmandu",
+          sponsor: "IPP. Rtn. Rabindra Jung Thapa",
+          bloodGroup: "O+ve",
+          achievements: ["Paul Haris Fellow"]
         },
         {
-          name: "Rtn. Pritam Poudel",
+          name: "Rtn. Pitamber Paudyal",
           role: "Imm. Past President",
           image:
             "/rotary/images/clubmembers/executive_members/Pitambar-Poudel.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "Former President with extensive experience in Rotary governance and international service projects.",
-          contact: "pritam.poudel@rotarykathmanduorth.org",
-          riid: "8997819",
-          classification: "Education",
-          joinDate: "2014",
-          achievements: ["Paul Harris Fellow", "Past President Recognition"]
+          contact: "pritamforchange@gmial.com",
+          riid: "8997818",
+          classification: "Motivational Speaker",
+          joinDate: "31st August 2014",
+          inductionDate: "31st August 2014",
+          birthday: "28th June",
+          weddingDay: "08th Feb",
+          spouse: "Sima Tiwari",
+          tel: "4374844 R",
+          cell: "9851072057 C",
+          address: "Hattigauda, Kathmandu",
+          sponsor: "IPP. Rtn. Rabindra Jung Thapa",
+          bloodGroup: "AB+ve",
+          achievements: ["Paul Haris Fellow", "Past President Recognition"]
         },
         {
           name: "Rtn. Sita Maya Poudel",
@@ -44,11 +64,19 @@ export default function Members() {
           width: 200,
           height: 200,
           bio: "Dedicated Rotarian focused on women's empowerment and community health initiatives.",
-          contact: "sita.poudel@rotarykathmanduorth.org",
+          contact: "sitapoudel127@gmail.com",
           riid: "10782762",
-          classification: "Healthcare",
-          joinDate: "2018",
-          achievements: ["Service Above Self Award", "Women in Rotary Recognition"]
+          classification: "Media Person",
+          joinDate: "15th August 2019",
+          inductionDate: "15th August 2019",
+          birthday: "31st March",
+          weddingDay: "28th Falgun",
+          spouse: "Shyam",
+          cell: "9860665884",
+          address: "Yerahity-16, Kathmandu",
+          sponsor: "Rtn. Ganesh Prasad Poudel",
+          bloodGroup: "B+ve",
+          achievements: ["Paul Haris Fellow"]
         },
         {
           name: "Rtn. Bishnu Poudel",
@@ -57,11 +85,18 @@ export default function Members() {
           width: 200,
           height: 200,
           bio: "Active member specializing in community development and youth mentorship programs.",
-          contact: "bishnu.poudel@rotarykathmanduorth.org",
+          contact: "bishnu.connect@gmail.com",
           riid: "8997816",
-          classification: "Community Service",
-          joinDate: "2015",
-          achievements: ["Youth Service Award", "Community Impact Recognition"]
+          classification: "Banking Management",
+          joinDate: "31st August 2014",
+          inductionDate: "31st August 2014",
+          birthday: "21th July",
+          weddingDay: "24th Feb",
+          spouse: "yashoda Ghimire",
+          cell: "9851103286 C",
+          address: "Mahankal, Kathmandu - 6",
+          sponsor: "Rtn. Arjun Siwakoti",
+          bloodGroup: "O+ve"
         },
         {
           name: "Rtn. Shankar Khadka",
@@ -71,16 +106,33 @@ export default function Members() {
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "shankarglow@gmail.com",
+          riid: "11582582",
+          classification: "Man Power, Overseas",
+          inductionDate: "23rd July 2022",
+          birthday: "04th April",
+          cell: "9851041138",
+          address: "Nagarjun-1, Kathmandu",
+          sponsor: "Pradeep Thapa"
         },
         {
-          name: "Rtn. Banshi Sharma",
+          name: "Rtn. Dr. Banshi Sharma",
           role: "Secretary",
           image: "/rotary/images/clubmembers/executive_members/banshi.jpg",
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "banshineupane@gmail.com",
+          riid: "111882658",
+          classification: "Veterinary, Consultant",
+          inductionDate: "12 October, 2023",
+          birthday: "19 th December",
+          weddingDay: "18th March",
+          spouse: "Hema Sharma",
+          tel: "01-4006562",
+          cell: "9851067387",
+          address: "Kathmandu-3, Lazimpat",
+          sponsor: "Rtn Santosh Bikram Shah"
         },
         {
           name: "Rtn. Nikesh Sthapit",
@@ -90,56 +142,116 @@ export default function Members() {
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "nikesh67@gmail.com",
+          classification: "Accountancy, Waste Management Consultant",
+          inductionDate: "23rd July 2022",
+          birthday: "03th Aug",
+          cell: "9851043482",
+          address: "Dallu, Kathmandu",
+          sponsor: "Rtn. Pradeep Thapa"
         },
         {
-          name: "Rtn. Rajendra Neupane",
+          name: "Rtn. Rajendra Neaupane",
           role: "Treasurer",
           image: "/rotary/images/clubmembers/executive_members/rajendra neupane.jpg",
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "alishanfurnitureworld@gmail.com",
+          classification: "Furniture Entrepreneur",
+          inductionDate: "10 Sept., 2024",
+          birthday: "29th January, 1984",
+          weddingDay: "Baishak - 11",
+          spouse: "Asha Neupane",
+          cell: "9851335347",
+          address: "Permanent Address - Syangja-10, Temporary Address - Sanobaryang, Kathmandu",
+          sponsor: "Pitamber Paudyal",
+          bloodGroup: "AB+"
         },
         {
-          name: "Rtn. Uttam khadka",
+          name: "Rtn. Uttam Khadka",
           role: "Director Membership Comm.",
           image:
             "/rotary/images/clubmembers/executive_members/UTTAM SIR.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "touttam@wlink.com.np",
+          riid: "6559951",
+          classification: "Surveyor",
+          inductionDate: "5th March 2006",
+          birthday: "21st November",
+          weddingDay: "5th June",
+          spouse: "Saruna Khadka",
+          tel: "4800902 R",
+          cell: "9851070323 C",
+          address: "Nayapati-1, Sundarijal, Kathmandu",
+          sponsor: "PP. Rtn. Rishi Raj Upadhyaya",
+          bloodGroup: "AB+ve",
+          achievements: ["Paul Haris Fellow Level Two"]
         },
         {
-          name: "Rtn. Ganesh Poudel",
+          name: "Rtn. Ganesh Pd Poudel",
           role: "Director Club Admin Comm.",
           image:
             "/rotary/images/clubmembers/executive_members/Ganesh Sir.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "me2gajendra@gmail.com",
+          riid: "9692774",
+          classification: "Teaching, Business Management",
+          inductionDate: "7th August 2016",
+          birthday: "30th June",
+          weddingDay: "6th Feb",
+          spouse: "Srijana Poudel",
+          cell: "9851070006",
+          address: "Bhangal, Kathmandu",
+          sponsor: "Balram Rai",
+          bloodGroup: "A+ve",
+          achievements: ["Paul Harris Fellow"]
         },
         {
-          name: "Rtn. Gautam Prasad Khanal",
+          name: "Rtn. Gautam Pd. Khanal",
           role: "Director-Service Project Comm.",
           image:
             "/rotary/images/clubmembers/executive_members/Gautam Khanal.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "khanalgp1@hotmail.com",
+          riid: "8997820",
+          classification: "Banker",
+          inductionDate: "31st August 2014",
+          birthday: "29th June",
+          weddingDay: "4th May",
+          spouse: "Nirmala Lamichhane",
+          cell: "9851097525 C",
+          address: "Banasthali, Balaju, Kathmandu-16",
+          sponsor: "IPP. Rtn. Rabindra Jung Thapa",
+          bloodGroup: "O+ve",
+          achievements: ["Paul Haris Fellow Level One"]
         },
         {
-          name: "Rtn. Suabash Ghimire",
+          name: "Rtn. Subash Ghimire",
           role: "Director-Public Realtion Comm.",
           image:
             "/rotary/images/clubmembers/executive_members/Subash sir-NP.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "subashghmire85@gmail.com",
+          riid: "10003226",
+          classification: "Teaching, Education Consultancy",
+          inductionDate: "23rd July 2017",
+          birthday: "18th April",
+          weddingDay: "28th Novemver",
+          spouse: "Sujata Simkhada",
+          cell: "9851071276",
+          address: "Sukedhara, Kathmandu",
+          sponsor: "Rtn. Bal Ram Rai",
+          bloodGroup: "O+ve",
+          achievements: ["Paul Haris Fellow"]
         },
         {
           name: "Rtn. Khem Raj Ghimire",
@@ -148,17 +260,37 @@ export default function Members() {
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "khemghimire21@gmail.com",
+          riid: "9528363",
+          classification: "Business, School Administration",
+          inductionDate: "14th February 2016",
+          birthday: "29th December",
+          weddingDay: "11th December",
+          spouse: "Chija Adhikari",
+          cell: "9851132846",
+          address: "Manjang-8, Lamjung",
+          sponsor: "Pritam Poudel",
+          bloodGroup: "A-ve",
+          achievements: ["Paul Haris Fellow"]
         },
         {
-          name: "Rtn. Dilli Ram Adhikari",
+          name: "Rtn. Dilli Raman Adhikari",
           role: "Sergeant At Arms",
           image:
             "/rotary/images/clubmembers/executive_members/Dilli-Ram.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "sdilliraman@yahoo.com",
+          classification: "Public Health, Nutrition Expert",
+          inductionDate: "10 Sep., 2024",
+          birthday: "6 th Sept. 1971",
+          weddingDay: "15 Jan. 1992",
+          spouse: "Shanta poudel Adhikari",
+          cell: "9841442006",
+          address: "Kathmandu, under Pokhara university nutrition specialist, Planning commission, Singhdarbar, Kathmandu. Permanent address - Budhanilakantha-7, Kathmandu",
+          sponsor: "Ganesh Poudel",
+          bloodGroup: "AB Positive"
         },
         {
           name: "Rtn. Gopal Raj Pokhrel",
@@ -168,16 +300,40 @@ export default function Members() {
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "pokhrelgopalraj@gmail.com",
+          riid: "5441709",
+          classification: "Teacher, Humanities",
+          inductionDate: "9th April 2000",
+          birthday: "16th July",
+          weddingDay: "25th April",
+          spouse: "Sunita",
+          tel: "4472094 R, 4244098 O",
+          cell: "9841415764",
+          address: "307 Shanti Goreto Marg, Chabahil, Kathmandu-7, PO Box: 5473",
+          sponsor: "PP. Rtn. Rishi Raj Upadhyaya",
+          bloodGroup: "AB+ve",
+          achievements: ["Paul Haris Fellow Level Two"]
         },
         {
-          name: "Rtn. Rishi Raj Upadhaya",
+          name: "Rtn. Rishi Raj Upadhyaya",
           role: "Chief Advisor",
           image: "",
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "rishiadhikari 1956@gmail.com",
+          riid: "3397803",
+          classification: "Builder, Construction Business",
+          inductionDate: "12th July 1998",
+          birthday: "1st August",
+          weddingDay: "10th February",
+          spouse: "Rina",
+          tel: "4426511 R",
+          cell: "9851037293 C",
+          address: "Elite Construction Co. P. Ltd. Naxal-1, Kathmandu",
+          sponsor: "PP. Rtn. Dr. S. K. Pahari",
+          bloodGroup: "A+ve",
+          achievements: ["Paul Haris Fellow Level Two"]
         },
         {
           name: "Rtn. Rabindra Jung Thapa",
@@ -187,7 +343,19 @@ export default function Members() {
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "rabindra_jungthapa@hotmail.com",
+          riid: "6625077",
+          classification: "Educational Institutions Management",
+          inductionDate: "24th Dec. 2007",
+          birthday: "20th August",
+          weddingDay: "5th December",
+          spouse: "Rabina",
+          tel: "016204635 R, 4822336, 4832445 O",
+          cell: "9851055016 C",
+          address: "Chabhil, Kathmandu-7",
+          sponsor: "PP. Rtn. Raju Sibakoti",
+          bloodGroup: "B+ve",
+          achievements: ["Paul Harris Fellow Level Two"]
         },
         {
           name: "Rtn. Bir Bahadur Tamang",
@@ -196,7 +364,19 @@ export default function Members() {
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "himalayataichi@gmail.com",
+          riid: "8558560",
+          classification: "Business, Trekking/Sport Events Mangement",
+          inductionDate: "1st July, 2012",
+          birthday: "27th Feb.",
+          weddingDay: "18th Baisakh",
+          spouse: "Sumitra",
+          tel: "4800030 H",
+          cell: "9851051871 C",
+          address: "Nayapati VDC-1, Ktm",
+          sponsor: "PP. Rtn. Uttam Khadka",
+          bloodGroup: "O+ve",
+          achievements: ["Paul Haris Fellow Level Two"]
         },
         {
           name: "Rtn. Shyam Nagarkoti",
@@ -206,7 +386,17 @@ export default function Members() {
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "shngak1976@gmail.com",
+          riid: "9680769",
+          classification: "Business, Real Estate",
+          inductionDate: "15th August 2019",
+          birthday: "27th June",
+          weddingDay: "22th Ashoj",
+          spouse: "Nirmala",
+          cell: "9841207885",
+          address: "Kageswori-Manohara -3, Kathmandu Lazimpat, Kathmandu, PO Box: 655",
+          sponsor: "Rtn. Bir Bahadur Tamang",
+          bloodGroup: "B+ve"
         },
         {
           name: "Rtn. Basudev Shrestha",
@@ -215,8 +405,68 @@ export default function Members() {
           width: 200,
           height: 200,
           bio: "",
-          contact: "",
+          contact: "devsshrestha@gmail.com",
+          riid: "11511042",
+          classification: "Teacher, Business Management",
+          inductionDate: "23rd July 2022",
+          birthday: "18 September",
+          weddingDay: "30th Jan",
+          spouse: "Sunita",
+          cell: "9851223881",
+          address: "Gyaneshwor, Kathmandu",
+          sponsor: "Rtn. Ganesh Prasad Poudel"
         },
+        {
+          name: "Rtn. Bishwash Timilsina",
+          role: "Executive Member",
+          image: "",
+          width: 200,
+          height: 200,
+          bio: "",
+          contact: "bishwash@snrec.com.np",
+          classification: "Business, Human Resources",
+          joinDate: "",
+          birthday: "10 March",
+          address: "Nagarjun-2, Kathmandu, Nepal",
+          tel: "014890823",
+          cell: "9851119492",
+          sponsor: "Rtn Pradeep Thapa",
+        },
+        {
+          name: "Rtn. Maha Prasad Pokharel",
+          role: "Executive Member",
+          image: "",
+          width: 200,
+          height: 200,
+          bio: "",
+          contact: "mahaprasad850@gmail.com",
+          classification: "Business, Health Service Sector",
+          joinDate: "",
+          birthday: "18 Dec, 1977",
+          weddingDay: "09 Feb",
+          spouse: "Sarala Amgain",
+          cell: "9851065331",
+          sponsor: "Rtn Pradeep Thapa",
+          bloodGroup: "O positive",
+        },
+        {
+          name: "Rtn. Chandra Prakash Khadka",
+          role: "Executive Member",
+          image: "",
+          width: 200,
+          height: 200,
+          bio: "",
+          contact: "cpkhadka@gmail.com",
+          classification: "Trader, Medical Equipment Distributing",
+          joinDate: "",
+          birthday: "26 June, 1978",
+          weddingDay: "23 March",
+          spouse: "Deepa Baniya Khadka",
+          cell: "9851255871",
+          sponsor: "Rtn Pradeep Thapa",
+          bloodGroup: "O positive",
+        },
+        
       ],
     },
     {
@@ -301,164 +551,442 @@ export default function Members() {
       members: [
         {
           name: "Rtn. Ram Lal Shrestha",
-          role: "RIID: 2200051",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "2200051",
+          classification: "Business, Industrialist",
+          inductionDate: "29th December 1993",
+          birthday: "15th September",
+          weddingDay: "19th February",
+          spouse: "Rukmini",
+          tel: "5521345 R, 4434895 O",
+          address: "ICTC, Naxal, Kathmandu, PO Box: 660",
+          contact: "ictc@info.com.np",
+          achievements: ["Charter Member", "Paul Harris Fellow Level One"]
         },
         {
           name: "Rtn. Rishi Raj Upadhyaya",
-          role: "RIID: 3397803",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "3397803",
+          classification: "Builder, Construction Business",
+          inductionDate: "12th July 1998",
+          birthday: "1st August",
+          weddingDay: "10th February",
+          spouse: "Rina",
+          tel: "4426511 R",
+          cell: "9851037293 C",
+          address: "Elite Construction Co. P. Ltd. Naxal-1, Kathmandu",
+          contact: "rishiadhikari 1956@gmail.com",
+          sponsor: "PP. Rtn. Dr. S. K. Pahari",
+          bloodGroup: "A+ve",
+          achievements: ["Paul Haris Fellow Level Two"]
         },
         {
-          name: "Rtn. Buddhi Man Shrestha",
-          role: "RIID: 3470586",
+          name: "Rtn. Dr. Buddhi Man Shrestha",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "3470586",
+          classification: "Oral Health and Hygine Expert, Dental Surgeon",
+          inductionDate: "16th August 1998",
+          birthday: "1st June",
+          weddingDay: "14th April",
+          spouse: "Jabin",
+          tel: "4017094 R, 438591011 0",
+          cell: "9851023469 C",
+          address: "Kantipur Dental College, Teaching Hospital & Research Centre, Kapan Marg, Kathmandu, PO Box: 19183",
+          contact: "kdchbm@gmail.com",
+          sponsor: "PP. Rtn. Dr. S. K. Pahari",
+          bloodGroup: "B +ve",
+          achievements: ["TRF Major Donor"]
         },
         {
           name: "Rtn. Gopal Raj Pokhrel",
-          role: "RIID: 5441709",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "5441709",
+          classification: "Teacher, Humanities",
+          inductionDate: "9th April 2000",
+          birthday: "16th July",
+          weddingDay: "25th April",
+          spouse: "Sunita",
+          tel: "4472094 R, 4244098 O",
+          cell: "9841415764",
+          address: "307 Shanti Goreto Marg, Chabahil, Kathmandu-7, PO Box: 5473",
+          contact: "pokhrelgopalraj@gmail.com",
+          sponsor: "PP. Rtn. Rishi Raj Upadhyaya",
+          bloodGroup: "AB+ve",
+          achievements: ["Paul Haris Fellow Level Two"]
         },
         {
-          name: "Rtn. Santosh Bikram Shah",
-          role: "RIID: 5929856",
+          name: "Rtn. Shantosh Bickram Shah",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "5929856",
+          classification: "Forestry Expert",
+          inductionDate: "22th December 2002",
+          birthday: "22th Dec",
+          weddingDay: "13th Dec",
+          spouse: "Sindhu",
+          tel: "4411431 R",
+          cell: "9841526895 C",
+          address: "Pani Pokhari, Maharajganj",
+          contact: "shantosh_bs@yahoo.com",
+          sponsor: "Rtn. Mohan R. Sharma",
+          bloodGroup: "A+ve",
+          achievements: ["Paul Haris Fellow"]
         },
         {
           name: "Rtn. Uttam Khadka",
-          role: "RIID: 6559951",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "6559951",
+          classification: "Surveyor",
+          inductionDate: "5th March 2006",
+          birthday: "21st November",
+          weddingDay: "5th June",
+          spouse: "Saruna Khadka",
+          tel: "4800902 R",
+          cell: "9851070323 C",
+          address: "Nayapati-1, Sundarijal, Kathmandu",
+          contact: "touttam@wlink.com.np",
+          sponsor: "PP. Rtn. Rishi Raj Upadhyaya",
+          bloodGroup: "AB+ve",
+          achievements: ["Paul Haris Fellow Level Two"]
         },
         {
           name: "Rtn. Raju Kumar Sibakoti",
-          role: "RIID: 6559953",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "6559953",
+          classification: "Advocate, Chartered Accountant",
+          inductionDate: "19th Sept 2005",
+          birthday: "5th Sept.",
+          weddingDay: "14th Dec.",
+          spouse: "Kala",
+          tel: "4436864 R, 4770796 O",
+          cell: "9851043488 C",
+          contact: "carajusibakoti@gmail.com",
+          sponsor: "PP. Rtn. Rishi Upadhyaya",
+          bloodGroup: "O+ve",
+          achievements: ["Paul Harris Fellow Level One", "President 2011-2012"]
         },
         {
           name: "Rtn. Rabindra Jung Thapa",
-          role: "RIID: 6625077",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "6625077",
+          classification: "Educational Institutions Management",
+          inductionDate: "24th Dec. 2007",
+          birthday: "20th August",
+          weddingDay: "5th December",
+          spouse: "Rabina",
+          tel: "016204635 R, 4822336, 4832445 O",
+          cell: "9851055016 C",
+          address: "Chabhil, Kathmandu-7",
+          contact: "rabindra_jungthapa@hotmail.com",
+          sponsor: "PP. Rtn. Raju Sibakoti",
+          bloodGroup: "B+ve",
+          achievements: ["Paul Harris Fellow Level Two"]
         },
         {
           name: "Rtn. Umesh Kumar Agrawal",
-          role: "RIID: 8116806",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "8116806",
+          classification: "Business, Medical Equipment Trader Merchandise",
+          inductionDate: "22nd November 2009",
+          birthday: "3rd May",
+          weddingDay: "5th December",
+          spouse: "Smita",
+          tel: "4436806 R, 4436276",
+          cell: "9851033043 C",
+          address: "Gairidhara-176, Kathmandu",
+          contact: "umeshgargktm@gmail.com",
+          sponsor: "PP. Rtn. Buddhi Man Shrestha",
+          bloodGroup: "A+ve",
+          achievements: ["TRF Major Donor"]
         },
         {
           name: "Rtn. Bir Bahadur Tamang",
-          role: "RIID: 8558560",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "8558560",
+          classification: "Business, Trekking/Sport Events Mangement",
+          inductionDate: "1st July, 2012",
+          birthday: "27th Feb.",
+          weddingDay: "18th Baisakh",
+          spouse: "Sumitra",
+          tel: "4800030 H",
+          cell: "9851051871 C",
+          address: "Nayapati VDC-1, Ktm",
+          contact: "himalayataichi@gmail.com",
+          sponsor: "PP. Rtn. Uttam Khadka",
+          bloodGroup: "O+ve",
+          achievements: ["Paul Haris Fellow Level Two"]
         },
         {
-          name: "Rtn. Bishnu Prasad Paudel",
-          role: "RIID: 8997816",
+          name: "Rtn. Bishnu Poudel",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "8997816",
+          classification: "Banking Management",
+          inductionDate: "31st August 2014",
+          birthday: "21th July",
+          weddingDay: "24th Feb",
+          spouse: "yashoda Ghimire",
+          cell: "9851103286 C",
+          address: "Mahankal, Kathmandu - 6",
+          contact: "bishnu.connect@gmail.com",
+          sponsor: "Rtn. Arjun Siwakoti",
+          bloodGroup: "O+ve"
         },
         {
           name: "Rtn. Sujan Subedi",
-          role: "RIID: 8997817",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "8997817",
+          classification: "Insurance Management",
+          inductionDate: "31st August 2014",
+          birthday: "02nd December",
+          weddingDay: "23th Feb",
+          spouse: "Pramila Khatiwoda",
+          tel: "056-563182 R",
+          cell: "9751063182 C",
+          address: "Kalanki, Kathmandu",
+          contact: "subedi42@yahoo.com",
+          sponsor: "Rtn. Arjun Siwakoti",
+          bloodGroup: "AB+ve"
         },
         {
-          name: "Rtn. Balram Rai",
-          role: "RIID: 8997818",
+          name: "Rtn. Bal Ram Rai",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "8997818",
+          classification: "",
+          inductionDate: "",
+          birthday: "",
+          weddingDay: "",
+          spouse: "",
+          cell: "",
+          address: "",
+          contact: "",
+          sponsor: ""
         },
         {
-          name: "Rtn. Pitambar Paudyal",
-          role: "RIID: 8997819",
+          name: "Rtn. Pitamber Paudyal",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "8997818",
+          classification: "Motivational Speaker",
+          inductionDate: "31st August 2014",
+          birthday: "28th June",
+          weddingDay: "08th Feb",
+          spouse: "Sima Tiwari",
+          tel: "4374844 R",
+          cell: "9851072057 C",
+          address: "Hattigauda, Kathmandu",
+          contact: "pritamforchange@gmial.com",
+          sponsor: "IPP. Rtn. Rabindra Jung Thapa",
+          bloodGroup: "AB+ve",
+          achievements: ["Paul Haris Fellow"]
         },
         {
-          name: "Rtn. Gautam Prasad Khanal",
-          role: "RIID: 8997820",
+          name: "Rtn. Gautam Pd. Khanal",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "8997820",
+          classification: "Banker",
+          inductionDate: "31st August 2014",
+          birthday: "29th June",
+          weddingDay: "4th May",
+          spouse: "Nirmala Lamichhane",
+          cell: "9851097525 C",
+          address: "Banasthali, Balaju, Kathmandu-16",
+          contact: "khanalgp1@hotmail.com",
+          sponsor: "IPP. Rtn. Rabindra Jung Thapa",
+          bloodGroup: "O+ve",
+          achievements: ["Paul Haris Fellow Level One"]
         },
         {
           name: "Rtn. Pradeep Thapa",
-          role: "RIID: 8997821",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "8997821",
+          classification: "Man Power, Management",
+          inductionDate: "31st August 2014",
+          birthday: "23th September",
+          weddingDay: "23th April",
+          spouse: "Hasina Thapa",
+          tel: "4370641 R",
+          cell: "9851069094 C",
+          address: "Ekatabasti, Mahankal, Kathmandu",
+          contact: "pradeep@rising.com.np",
+          sponsor: "IPP. Rtn. Rabindra Jung Thapa",
+          bloodGroup: "O+ve",
+          achievements: ["Paul Haris Fellow"]
         },
         {
           name: "Rtn. Nirmal Bastola",
-          role: "RIID: 9250651",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "9250651",
+          classification: "Business, Hotelier",
+          inductionDate: "19th April 2015",
+          birthday: "26th Nov",
+          weddingDay: "19th June",
+          spouse: "Prabha Bastola",
+          cell: "9851090971",
+          address: "Jorpati, Kathmadu",
+          contact: "nirmal.ustt@gmail.com",
+          sponsor: "Rtn. Balram Rai",
+          bloodGroup: "O+ve",
+          achievements: ["Paul Haris Fellow"]
         },
         {
           name: "Rtn. Khem Raj Ghimire",
-          role: "RIID: 9528363",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "9528363",
+          classification: "Business, School Administration",
+          inductionDate: "14th February 2016",
+          birthday: "29th December",
+          weddingDay: "11th December",
+          spouse: "Chija Adhikari",
+          cell: "9851132846",
+          address: "Manjang-8, Lamjung",
+          contact: "khemghimire21@gmail.com",
+          sponsor: "Pritam Poudel",
+          bloodGroup: "A-ve",
+          achievements: ["Paul Haris Fellow"]
         },
         {
           name: "Rtn. Shyam Nagarkoti",
-          role: "RIID: 9680769",
+          role: "Active Member",
           image: "/rotary/viber image 2020 12 27 10 46 11?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "9680769",
+          classification: "Business, Real Estate",
+          inductionDate: "15th August 2019",
+          birthday: "27th June",
+          weddingDay: "22th Ashoj",
+          spouse: "Nirmala",
+          cell: "9841207885",
+          address: "Kageswori-Manohara -3, Kathmandu Lazimpat, Kathmandu, PO Box: 655",
+          contact: "shngak1976@gmail.com",
+          sponsor: "Rtn. Bir Bahadur Tamang",
+          bloodGroup: "B+ve"
         },
         {
-          name: "Rtn. Ganesh Prasad Poudel",
-          role: "RIID: 9692774",
+          name: "Rtn. Ganesh Pd Poudel",
+          role: "Active Member",
           image: "",
           width: 200,
           height: 200,
+          riid: "9692774",
+          classification: "Teaching, Business Management",
+          inductionDate: "7th August 2016",
+          birthday: "30th June",
+          weddingDay: "6th Feb",
+          spouse: "Srijana Poudel",
+          cell: "9851070006",
+          address: "Bhangal, Kathmandu",
+          contact: "me2gajendra@gmail.com",
+          sponsor: "Balram Rai",
+          bloodGroup: "A+ve",
+          achievements: ["Paul Harris Fellow"]
         },
         {
           name: "Rtn. Subash Ghimire",
-          role: "RIID: 10003226",
+          role: "Active Member",
           image: "/rotary/Subash sir NP?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "10003226",
+          classification: "Teaching, Education Consultancy",
+          inductionDate: "23rd July 2017",
+          birthday: "18th April",
+          weddingDay: "28th Novemver",
+          spouse: "Sujata Simkhada",
+          cell: "9851071276",
+          address: "Sukedhara, Kathmandu",
+          contact: "subashghmire85@gmail.com",
+          sponsor: "Rtn. Bal Ram Rai",
+          bloodGroup: "O+ve",
+          achievements: ["Paul Haris Fellow"]
         },
         {
           name: "Rtn. Babu Krishna Thapa",
-          role: "RIID: 10099938",
+          role: "Active Member",
           image: "/rotary/babukrishna?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "10099938",
+          classification: "Realter, Housing Business",
+          inductionDate: "22th Oct 2017",
+          birthday: "26th Jan",
+          weddingDay: "15th April",
+          spouse: "Chanita Silwal",
+          cell: "9801050010",
+          address: "Tripureshwor, Kathmandu",
+          contact: "babu.thap@gmail.com",
+          sponsor: "Rtn. Ajay Regmi",
+          bloodGroup: "B+ve"
         },
         {
           name: "Rtn. Sudarshan Bista",
-          role: "RIID: 10099939",
+          role: "Active Member",
           image: "/rotary/sudarshan?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "10099939",
+          classification: "Business, Housing and Real Estate",
+          inductionDate: "19th Nov 2017",
+          birthday: "06th Oct",
+          weddingDay: "15th Oct",
+          spouse: "Bina Karki",
+          cell: "9851052577",
+          address: "Tripureshwor, Kathmandu",
+          contact: "sudarshan.bista@ce-construction.com",
+          sponsor: "Rtn. Ajay Regmi",
+          bloodGroup: "AB+ve"
         },
         {
           name: "Rtn. Kamal Dev Malla",
@@ -469,31 +997,73 @@ export default function Members() {
         },
         {
           name: "Rtn. Sagar Dhakal",
-          role: "RIID: 10320266",
+          role: "Active Member",
           image: "/rotary/IMG 9054?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "10320266",
+          classification: "Financial Business",
+          inductionDate: "12th July, 2018",
+          birthday: "27th April",
+          weddingDay: "7th Feb",
+          spouse: "Bina Dhakal",
+          cell: "9851055216",
+          address: "Grandy CT, Kathmandu",
+          contact: "sagar.dhakal@gmail.com",
+          sponsor: "P. Rtn. Bal Ram Rai",
+          achievements: ["Paul Haris Fellow"]
         },
         {
           name: "Rtn. Sita Maya Poudel",
-          role: "RIID: 10782762",
+          role: "Active Member",
           image: "/rotary/sitamaya?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "10782762",
+          classification: "Media Person",
+          inductionDate: "15th August 2019",
+          birthday: "31st March",
+          weddingDay: "28th Falgun",
+          spouse: "Shyam",
+          cell: "9860665884",
+          address: "Yerahity-16, Kathmandu",
+          contact: "sitapoudel127@gmail.com",
+          sponsor: "Rtn. Ganesh Prasad Poudel",
+          bloodGroup: "B+ve",
+          achievements: ["Paul Haris Fellow"]
         },
         {
           name: "Rtn. Dr. Pratikchhya Shrestha",
-          role: "RIID: 10620116",
+          role: "Active Member",
           image: "/rotary/pratikshya?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "10620116",
+          classification: "Oral Health Professional",
+          inductionDate: "15st August 2019",
+          birthday: "28th November",
+          weddingDay: "22th January",
+          spouse: "Amit",
+          cell: "9841434336",
+          address: "Samakhusi, Kathmandu",
+          contact: "pratikchhya_s@hotmail.com",
+          sponsor: "Dr. Buddhi Man Shrestha",
+          bloodGroup: "B+ve"
         },
         {
           name: "Rtn. Purni Tamang",
-          role: "RIID: 11150363",
+          role: "Active Member",
           image: "/rotary/purni?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "11150363",
+          classification: "Social Service",
+          inductionDate: "2 August 2021",
+          birthday: "3 September",
+          cell: "9840801361",
+          address: "Gokarneshwor, Kathmandu",
+          contact: "purnitamang900@gmail.com",
+          sponsor: "Rtn. Bir Bahadur Tamang"
         },
         {
           name: "Rtn. Rajesh Karki",
@@ -504,45 +1074,100 @@ export default function Members() {
         },
         {
           name: "Rtn. Nikesh Sthapit",
-          role: "RIID: 11508263",
+          role: "Active Member",
           image: "/rotary/Nikesh Sthapit?height=200&width=200",
           width: 200,
           height: 200,
+          classification: "Accountancy, Waste Management Consultant",
+          inductionDate: "23rd July 2022",
+          birthday: "03th Aug",
+          cell: "9851043482",
+          address: "Dallu, Kathmandu",
+          contact: "nikesh67@gmail.com",
+          sponsor: "Rtn. Pradeep Thapa"
         },
         {
-          name: "Rtn. Suneeta Regmi",
-          role: "RIID: 11508289",
+          name: "Rtn. Suneeta Regmi Pokhrel",
+          role: "Active Member",
           image: "/rotary/Suneeta Regmi Pokhrel?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "11508289",
+          classification: "Seniour Advocate, Mediation Expert",
+          inductionDate: "23rd July 2022",
+          birthday: "20th Sept",
+          weddingDay: "25th April",
+          spouse: "Gopal Raj",
+          cell: "9851034420",
+          address: "Chabahil, Kathmandu",
+          contact: "suneetaregmi@Yahoo.com",
+          sponsor: "Gopal Raj Pokhrel"
         },
         {
           name: "Rtn. Basudev Shrestha",
-          role: "RIID: 11511042",
+          role: "Active Member",
           image: "/rotary/Basu Dev Shrestha?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "11511042",
+          classification: "Teacher, Business Management",
+          inductionDate: "23rd July 2022",
+          birthday: "18 September",
+          weddingDay: "30th Jan",
+          spouse: "Sunita",
+          cell: "9851223881",
+          address: "Gyaneshwor, Kathmandu",
+          contact: "devsshrestha@gmail.com",
+          sponsor: "Rtn. Ganesh Prasad Poudel"
         },
         {
           name: "Rtn. Shyam Prasad Bhandari",
-          role: "RIID: 11582578",
+          role: "Active Member",
           image: "/rotary/Shyam Prasad Bhandari?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "11582578",
+          classification: "Business, Real Estate",
+          inductionDate: "23rd July 2022",
+          birthday: "9th Ashad",
+          weddingDay: "28th Falgun",
+          spouse: "Sita Maya",
+          cell: "9851053443",
+          address: "Yerahity, Kathmandu",
+          contact: "sbhandari43@gmail.com",
+          sponsor: "Rtn. Sita Maya Poudel"
         },
         {
           name: "Rtn. Maya Ghimire",
-          role: "RIID: 11582581",
+          role: "Active Member",
           image: "/rotary/maya?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "11582581",
+          classification: "Media Management",
+          inductionDate: "23rd July 2022",
+          birthday: "23rd Chaitra",
+          weddingDay: "24th Magh",
+          spouse: "Ganesh",
+          cell: "9841570376",
+          address: "Budhanilkantha-8, Kathmandu",
+          contact: "srijanapoudel382@gmail.com",
+          sponsor: "Rtn. Ganesh Prasad Poudel"
         },
         {
           name: "Rtn. Shankar Khadka",
-          role: "RIID: 11582582",
+          role: "Active Member",
           image: "/rotary/Shankar Khadka?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "11582582",
+          classification: "Man Power, Overseas",
+          inductionDate: "23rd July 2022",
+          birthday: "04th April",
+          cell: "9851041138",
+          address: "Nagarjun-1, Kathmandu",
+          contact: "shankarglow@gmail.com",
+          sponsor: "Pradeep Thapa"
         },
         {
           name: "Rtn. Sugat Adhikari",
@@ -552,18 +1177,64 @@ export default function Members() {
           height: 200,
         },
         {
-          name: "Rtn. Dilli Ram Adhikari",
-          role: "RIID: 12148804",
+          name: "Rtn. Dilli Raman Adhikari",
+          role: "Active Member",
           image: "/rotary/Dilli Ram Adhikari?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "12148804",
+          classification: "Public Health, Nutrition Expert",
+          inductionDate: "10 Sep., 2024",
+          birthday: "6 th Sept. 1971",
+          weddingDay: "15 Jan. 1992",
+          spouse: "Shanta poudel Adhikari",
+          cell: "9841442006",
+          address: "Kathmandu, under Pokhara university nutrition specialist, Planning commission, Singhdarbar, Kathmandu. Permanent address - Budhanilakantha-7, Kathmandu",
+          contact: "sdilliraman@yahoo.com",
+          sponsor: "Ganesh Poudel",
+          bloodGroup: "AB Positive"
         },
         {
           name: "Rtn. Uttam Jung Kunwar",
-          role: "RIID: 11835152",
+          role: "Active Member",
           image: "/rotary/Uttam?height=200&width=200",
           width: 200,
           height: 200,
+          riid: "11835152"
+        },
+        {
+          name: "Rtn. Nripendra Shrestha",
+          role: "Active Member",
+          image: "",
+          width: 200,
+          height: 200,
+          classification: "Real State and Business, Hotelier",
+          inductionDate: "8th Dec. 2024",
+          birthday: "09 th January",
+          weddingDay: "28th Nov, 2004",
+          spouse: "Sarita Shrestha",
+          cell: "9851011832",
+          address: "Boutique Hotel, Thamel Address – Tokha-7, Kathmandu",
+          contact: "nripe11832@gmail.com",
+          sponsor: "Sita Maya Poudel",
+          bloodGroup: "AB Positive"
+        },
+        {
+          name: "Rtn. Sijan Kumar Shrestha",
+          role: "Active Member",
+          image: "",
+          width: 200,
+          height: 200,
+          classification: "Travel and Tour Management",
+          inductionDate: "15th Sept. 2024",
+          birthday: "28 th May",
+          weddingDay: "20th Jan, 07 Magh",
+          spouse: "Ramila Shrestha",
+          cell: "9851137393",
+          address: "Pakanajol, Kathmandu - 16",
+          contact: "versatiletkt@gmail.com",
+          sponsor: "Sita Maya Poudel",
+          bloodGroup: "AB Positive"
         },
       ],
     },
@@ -776,31 +1447,48 @@ export default function Members() {
         {
           name: "Rotaract Club of Kathmandu North",
           role: "Chartered on 2023-01-01",
-          image: "/rotary/images/clubmembers/rotaract_club_of_kathmandu_north.jpg",
+          image: "/rotary/Rotaract BOD/Kathmandu North.jpg",
           width: 200,
           height: 200,
         },
         {
           name: "Rotaract Club of Reliance College",
           role: "Chartered on 2023-01-01",
-          image:
-            "/rotary/images/clubmembers/rotaract_club_of_kathmandu_north_east.jpg",
+          image: "/rotary/Rotaract BOD/Reliance.jpg",
           width: 200,
           height: 200,
         },
         {
           name: "Rotaract Club of Kantipur Dental College",
           role: "Chartered on 2023-01-01",
-          image:
-            "/rotary/images/clubmembers/rotaract_club_of_kathmandu_north_west.jpg",
+          image: [
+            "/rotary/Rotaract BOD/KDC.jpg",
+            "/rotary/Rotaract BOD/KDC1.jpg",
+          ],
           width: 200,
           height: 200,
         },
         {
           name: "Rotaract Club of Kathmandu Medical College",
           role: "Chartered on 2023-01-01",
-          image:
-            "/rotary/images/clubmembers/rotaract_club_of_kathmandu_north_west.jpg",
+          image: [
+            "/rotary/Rotaract BOD/KMC.jpg",
+            "/rotary/Rotaract BOD/KMC1.jpg",
+            "/rotary/Rotaract BOD/KMC2.jpg",
+          ],
+          width: 200,
+          height: 200,
+        },
+      ],
+    },
+    {
+      id: "rcc-sundarijal",
+      label: "Rotary Community Corps Sundarijal (Charter: 16 Apr 2007)",
+      members: [
+        {
+          name: "Rotary Community Corps Sundarijal",
+          role: "Charter: 16 Apr 2007",
+          image: "/rotary/community corps.png",
           width: 200,
           height: 200,
         },
@@ -821,45 +1509,87 @@ export default function Members() {
         </TabsList>
         {memberCategories.map((category) => (
           <TabsContent key={category.id} value={category.id}>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {category.members.map((member, index) => (
-                <Card key={index}>
-                  <CardContent className="pt-4 sm:pt-6">
-                    <div className="text-center">
-                      <Avatar className="w-24 h-24 sm:w-32 sm:h-32 rounded-full mx-auto mb-3 sm:mb-4 object-cover">
-                        <AvatarImage src={member.image} />
-                        <AvatarFallback>
-                          {(() => {
-                            const nameParts = member.name
-                              .split(" ")
-                              .filter((part) => part && !part.includes("*"));
-                            const actualName = nameParts.slice(1);
-                            if (actualName.length >= 2) {
-                              return (
-                                actualName[0].charAt(0) +
-                                actualName[actualName.length - 1].charAt(0)
-                              ).toUpperCase();
-                            }
-                            return actualName[0]?.charAt(0).toUpperCase() || "";
-                          })()}
-                        </AvatarFallback>
-                      </Avatar>
-
-                      {category.id === "executive" ? (
-                        <MemberDialog member={member} />
-                      ) : (
-                        <h3 className="font-bold text-base sm:text-lg">
-                          {member.name}
-                        </h3>
-                      )}
-                      <p className="text-sm sm:text-base text-gray-600">
-                        {member.role}
-                      </p>
-                    </div>
+            {category.id === "rcc-sundarijal" ? (
+              <div className="flex justify-center">
+                <Card className="max-w-4xl w-full">
+                  <CardContent className="p-6">
+                    <Image
+                      src={Array.isArray(category.members[0].image) ? category.members[0].image[0] : category.members[0].image}
+                      alt={category.members[0].name}
+                      width={800}
+                      height={600}
+                      className="w-full h-auto rounded-lg"
+                    />
                   </CardContent>
                 </Card>
-              ))}
-            </div>
+              </div>
+            ) : (
+              <div className={`grid gap-4 ${category.id === "Rotaract Clubs" ? "sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4" : "sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"}`}>
+                {category.members.map((member, index) => (
+                  <Card key={index} className="flex flex-col">
+                    <CardContent className="pt-4 sm:pt-6 flex-1 flex flex-col">
+                      <div className="text-center flex-1 flex flex-col">
+                        {category.id === "Rotaract Clubs" ? (
+                          <>
+                            <div className="w-full mx-auto mb-3 sm:mb-4 rounded-lg overflow-hidden">
+                              <Image
+                                src={Array.isArray(member.image) ? member.image[0] : member.image}
+                                alt={member.name}
+                                width={member.width || 400}
+                                height={member.height || 300}
+                                className="w-full h-auto object-contain rounded-lg"
+                              />
+                            </div>
+                            <div className="flex-1 flex flex-col justify-center min-h-[60px]">
+                              <div className="w-full px-2">
+                                <RotaractClubDialog club={member as { name: string; role: string; image: string | string[]; width: number; height: number; }} />
+                              </div>
+                            </div>
+                            <p className="text-sm sm:text-base text-gray-600 break-words px-2 mt-2">
+                              {member.role}
+                            </p>
+                          </>
+                        ) : (
+                          <>
+                            <Avatar className="w-24 h-24 sm:w-32 sm:h-32 rounded-full mx-auto mb-3 sm:mb-4 object-cover flex-shrink-0">
+                              <AvatarImage src={Array.isArray(member.image) ? member.image[0] : member.image} />
+                              <AvatarFallback>
+                                {(() => {
+                                  const nameParts = member.name
+                                    .split(" ")
+                                    .filter((part) => part && !part.includes("*"));
+                                  const actualName = nameParts.slice(1);
+                                  if (actualName.length >= 2) {
+                                    return (
+                                      actualName[0].charAt(0) +
+                                      actualName[actualName.length - 1].charAt(0)
+                                    ).toUpperCase();
+                                  }
+                                  return actualName[0]?.charAt(0).toUpperCase() || "";
+                                })()}
+                              </AvatarFallback>
+                            </Avatar>
+
+                            <div className="flex-1 flex flex-col justify-center min-h-[60px]">
+                              {category.id === "executive" || category.id === "active" ? (
+                                <MemberDialog member={{ ...member, image: Array.isArray(member.image) ? member.image[0] : member.image } as Parameters<typeof MemberDialog>[0]['member']} />
+                              ) : (
+                                <h3 className="font-bold text-base sm:text-lg break-words px-2">
+                                  {member.name}
+                                </h3>
+                              )}
+                            </div>
+                            <p className="text-sm sm:text-base text-gray-600 break-words px-2 mt-2">
+                              {member.role}
+                            </p>
+                          </>
+                        )}
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            )}
           </TabsContent>
         ))}
       </Tabs>

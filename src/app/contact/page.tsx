@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Clock, Users, Calendar } from 'lucide-react'
+import { Phone, MapPin, Clock, Users, Calendar } from 'lucide-react'
 
 export default function Contact() {
   const [formStatus, setFormStatus] = useState('')
@@ -76,21 +76,14 @@ export default function Contact() {
                 <MapPin className="text-blue-900" />
                 <div>
                   <p className="font-semibold">Address</p>
-                  <p className="text-sm text-gray-600">Hotel Yak & Yeti<br />Durbar Marg, Kathmandu 44600</p>
+                  <p className="text-sm text-gray-600">Hotel Shankar<br />Lazimpat, Kathmandu</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="text-blue-900" />
                 <div>
                   <p className="font-semibold">Phone</p>
-                  <p className="text-sm text-gray-600">+977 1 4248999</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <Mail className="text-blue-900" />
-                <div>
-                  <p className="font-semibold">Email</p>
-                  <p className="text-sm text-gray-600">info@rotarykathmanduorth.org</p>
+                  <p className="text-sm text-gray-600">985-1071276</p>
                 </div>
               </div>
             </CardContent>
@@ -148,7 +141,7 @@ export default function Contact() {
           </CardHeader>
           <CardContent>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.123456789!2d85.3261047!3d27.7172453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1b7b5f10b0b1%3A0x0!2zMjfCsDQzJzAyLjEiTiA4NcKwMTknMzQuMCJF!5e0!3m2!1sen!2snp!4v1234567890"
+              src="https://www.google.com/maps?q=Hotel+Shanker+Lazimpat+Kathmandu&output=embed"
               width="100%"
               height="400"
               className="rounded-lg"
@@ -157,6 +150,14 @@ export default function Contact() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
+            <div className="mt-4 text-center">
+              <Button asChild variant="outline">
+                <a href="https://maps.app.goo.gl/QfVPTNTZcMP5Ywp89" target="_blank" rel="noopener noreferrer">
+                  <MapPin className="h-4 w-4 mr-2" />
+                  Open in Google Maps
+                </a>
+              </Button>
+            </div>
           </CardContent>
         </Card>
       </div>

@@ -2,7 +2,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
-import { Mail, Calendar, Award, User } from "lucide-react"
+import { Mail, Calendar, Award, User, MapPin, Phone, Heart, Droplet } from "lucide-react"
 
 
 interface Member {
@@ -16,7 +16,16 @@ interface Member {
   riid?: string;
   classification?: string;
   joinDate?: string;
+  inductionDate?: string;
   achievements?: string[];
+  birthday?: string;
+  weddingDay?: string;
+  spouse?: string;
+  tel?: string;
+  cell?: string;
+  address?: string;
+  sponsor?: string;
+  bloodGroup?: string;
 }
 
 interface MemberDialogProps {
@@ -80,10 +89,85 @@ export function MemberDialog({ member }: MemberDialogProps) {
                 <p className="text-gray-600">{member.joinDate}</p>
               </div>
             )}
+            {member.inductionDate && (
+              <div>
+                <span className="font-semibold">Induction Date:</span>
+                <p className="text-gray-600">{member.inductionDate}</p>
+              </div>
+            )}
             {member.contact && (
               <div>
-                <span className="font-semibold">Contact:</span>
+                <span className="font-semibold flex items-center">
+                  <Mail className="h-3 w-3 mr-1" />
+                  Email:
+                </span>
                 <p className="text-gray-600">{member.contact}</p>
+              </div>
+            )}
+            {member.birthday && (
+              <div>
+                <span className="font-semibold flex items-center">
+                  <Calendar className="h-3 w-3 mr-1" />
+                  Birthday:
+                </span>
+                <p className="text-gray-600">{member.birthday}</p>
+              </div>
+            )}
+            {member.weddingDay && (
+              <div>
+                <span className="font-semibold flex items-center">
+                  <Heart className="h-3 w-3 mr-1" />
+                  Wedding Day:
+                </span>
+                <p className="text-gray-600">{member.weddingDay}</p>
+              </div>
+            )}
+            {member.spouse && (
+              <div>
+                <span className="font-semibold">Spouse:</span>
+                <p className="text-gray-600">{member.spouse}</p>
+              </div>
+            )}
+            {member.tel && (
+              <div>
+                <span className="font-semibold flex items-center">
+                  <Phone className="h-3 w-3 mr-1" />
+                  Tel:
+                </span>
+                <p className="text-gray-600">{member.tel}</p>
+              </div>
+            )}
+            {member.cell && (
+              <div>
+                <span className="font-semibold flex items-center">
+                  <Phone className="h-3 w-3 mr-1" />
+                  Cell:
+                </span>
+                <p className="text-gray-600">{member.cell}</p>
+              </div>
+            )}
+            {member.address && (
+              <div className="col-span-2">
+                <span className="font-semibold flex items-center">
+                  <MapPin className="h-3 w-3 mr-1" />
+                  Address:
+                </span>
+                <p className="text-gray-600">{member.address}</p>
+              </div>
+            )}
+            {member.sponsor && (
+              <div>
+                <span className="font-semibold">Sponsor:</span>
+                <p className="text-gray-600">{member.sponsor}</p>
+              </div>
+            )}
+            {member.bloodGroup && (
+              <div>
+                <span className="font-semibold flex items-center">
+                  <Droplet className="h-3 w-3 mr-1" />
+                  Blood Group:
+                </span>
+                <p className="text-gray-600">{member.bloodGroup}</p>
               </div>
             )}
           </div>

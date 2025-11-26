@@ -1,85 +1,73 @@
+"use client";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
-import Link from "next/link";
+import { Download, FileText } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export default function Projects() {
-  const projects = [
-    {
-      id: "pcos-awareness",
-      title: "Talk program on PCOS",
-      status: "Completed",
-      description:
-        "A talk on PCOS and reproductive health was held on February 1 at Reliance Public School, organized by the Rotary Club of Kathmandu North and its sponsored Rotaract Clubs, with Dr. Neha Guragai and Dr. Manisha Acharya from Indira Infertility Center as resource persons.",
-      image: "images/Projects/PCOS.jpg",
-      progress: 100,
-    },
-    {
-      id: "dengue-awareness",
-      title: "Dengue Awareness Campaign",
-      status: "Ongoing",
-      description:
-        "Dengue awareness programs have  been conducted and still going on in Dang and Kathmandu by Rotary Club of Kathmandu North led by Rtn. Dr. Sugat Adhikari.",
-      image: "images/Projects/Dengue Awarness.jpg",
-      progress: 75,
-    },
-    {
-      id: "medical-accessories",
-      title: "Medical Accessories and laptop handover program",
-      status: "Completed",
-      description:
-        " Handover of medical accessories and laptops to support local health initiatives in Bunkot,Gorkha.",
-      image: "images/Projects/medical accessories.jpg",
-      progress: 100,
-    },
-  ];
+  const pdfPath = "/rotary/downloads/Rotary Action Plan 2024-25.pdf";
+  const pdfUrl = encodeURI(pdfPath);
+  const [pdfError, setPdfError] = useState(false);
+
+  useEffect(() => {
+    // Check if PDF loads successfully
+    const checkPdf = async () => {
+      try {
+        const response = await fetch(pdfUrl, { method: 'HEAD' });
+        if (!response.ok) {
+          setPdfError(true);
+        }
+      } catch (error) {
+        setPdfError(true);
+      }
+    };
+    checkPdf();
+  }, [pdfUrl]);
 
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold text-blue-900 mb-8">Our Projects</h1>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
-        {projects.map((project, index) => (
-          <Card key={index}>
-            <Image
-              src={project.image}
-              alt={project.title}
-              className="w-full h-48 object-cover rounded-t-lg"
-              height={192}
-              width={400}
-            />
-            <CardHeader>
-              <div className="flex justify-between items-center">
-                <CardTitle>{project.title}</CardTitle>
-                <span
-                  className={cn(
-                    "px-2 py-1 rounded-full text-sm",
-                    project.status === "Ongoing" && "bg-blue-100 text-blue-800",
-                    project.status === "Completed" &&
-                      "bg-green-100 text-green-800",
-                    project.status === "Upcoming" &&
-                      "bg-yellow-100 text-yellow-800"
-                  )}
-                >
-                  {project.status}
-                </span>
+      
+      {/* PDF Display Section */}
+      <Card>
+        <CardHeader>
+          <div className="flex items-center justify-between">
+            <CardTitle className="flex items-center gap-2">
+              <FileText className="h-5 w-5 text-blue-900" />
+              Rotary Action Plan 2024-25
+            </CardTitle>
+            <Button asChild>
+              <a href={pdfUrl} download="Rotary Action Plan 2024-25.pdf">
+                <Download className="h-4 w-4 mr-2" />
+                Download PDF
+              </a>
+            </Button>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <div className="w-full">
+            {!pdfError ? (
+              <iframe
+                src={`${pdfUrl}#toolbar=1`}
+                className="w-full h-[calc(100vh-300px)] min-h-[600px] border rounded-lg"
+                title="Rotary Action Plan 2024-25"
+                onError={() => setPdfError(true)}
+              />
+            ) : (
+              <div className="flex flex-col items-center justify-center h-[600px] bg-gray-100 rounded-lg">
+                <p className="text-gray-600 mb-4">Unable to display PDF. Please download to view.</p>
+                <Button asChild>
+                  <a href={pdfUrl} download="Rotary Action Plan 2024-25.pdf">
+                    <Download className="h-4 w-4 mr-2" />
+                    Download PDF
+                  </a>
+                </Button>
               </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600 mb-4">{project.description}</p>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4">
-                <div
-                  className="bg-blue-600 h-2.5 rounded-full"
-                  style={{ width: `${project.progress}%` }}
-                ></div>
-              </div>
-              <Button asChild className="w-full">
-                <Link href={`/projects/${project.id}`}>Learn More</Link>
-              </Button>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+            )}
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 }
