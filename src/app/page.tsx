@@ -8,12 +8,12 @@ import CallToAction from "./_components/CallToAction";
 
 const carouselItems = [
   {
-    image: "/rotary/sliders/welcome rotary.jpg",
+    image: "/rotary/sliders/first meeting .jpg",
     title: "Welcome to Rotary Club of Kathmandu North",
     description: "Serving our community since 1995",
   },
   {
-    image: "/rotary/sliders/first meeting .jpg",
+    image: "/rotarysliders/first meeting .jpg",
     title: "First Meeting of the Year",
     description: "First meeting of the year with our new president",
   },

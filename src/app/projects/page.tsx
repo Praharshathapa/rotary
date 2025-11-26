@@ -12,7 +12,7 @@ export default function Projects() {
       status: "Completed",
       description:
         "A talk on PCOS and reproductive health was held on February 1 at Reliance Public School, organized by the Rotary Club of Kathmandu North and its sponsored Rotaract Clubs, with Dr. Neha Guragai and Dr. Manisha Acharya from Indira Infertility Center as resource persons.",
-      image: "/rotary/images/Projects/PCOS.jpg",
+      image: "images/Projects/PCOS.jpg",
       progress: 100,
     },
     {
@@ -21,7 +21,7 @@ export default function Projects() {
       status: "Ongoing",
       description:
         "Dengue awareness programs have  been conducted and still going on in Dang and Kathmandu by Rotary Club of Kathmandu North led by Rtn. Dr. Sugat Adhikari.",
-      image: "/rotary/images/Projects/Dengue Awarness.jpg",
+      image: "images/Projects/Dengue Awarness.jpg",
       progress: 75,
     },
     {
@@ -30,7 +30,7 @@ export default function Projects() {
       status: "Completed",
       description:
         " Handover of medical accessories and laptops to support local health initiatives in Bunkot,Gorkha.",
-      image: "/rotary/images/Projects/medical accessories.jpg",
+      image: "images/Projects/medical accessories.jpg",
       progress: 100,
     },
   ];

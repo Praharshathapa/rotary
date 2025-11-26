@@ -27,7 +27,7 @@ export default async function ProjectDetail({ params }: ProjectDetailProps) {
       title: "Talk program on PCOS",
       status: "Completed",
       description: "A comprehensive awareness program on Polycystic Ovary Syndrome (PCOS) and reproductive health was conducted at Reliance Public School, organized by the Rotary Club of Kathmandu North and its sponsored Rotaract Clubs.",
-      image: "/rotary/images/Projects/PCOS.jpg",
+      image: "images/Projects/PCOS.jpg",
       date: "February 1, 2024",
       location: "Reliance Public School, Kathmandu",
       budget: "NPR 50,000",
@@ -50,15 +50,15 @@ export default async function ProjectDetail({ params }: ProjectDetailProps) {
         "Rotaract Club of Kathmandu North"
       ],
       gallery: [
-        "/rotary/images/Projects/PCOS.jpg",
-        "/rotary/images/Projects/PCOS.jpg", // Placeholder for additional images
+        "images/Projects/PCOS.jpg",
+        "images/Projects/PCOS.jpg", // Placeholder for additional images
       ]
     },
     "dengue-awareness": {
       title: "Dengue Awareness Campaign",
       status: "Ongoing",
       description: "A comprehensive dengue awareness program conducted in Dang and Kathmandu districts to educate communities about dengue prevention, symptoms, and treatment.",
-      image: "/rotary/images/Projects/Dengue Awarness.jpg",
+      image: "images/Projects/Dengue Awarness.jpg",
       date: "Ongoing since March 2024",
       location: "Dang and Kathmandu Districts",
       budget: "NPR 100,000",
@@ -81,15 +81,15 @@ export default async function ProjectDetail({ params }: ProjectDetailProps) {
         "Local Health Posts"
       ],
       gallery: [
-        "/rotary/images/Projects/Dengue Awarness.jpg",
-        "/rotary/images/Projects/Dengue Awarness.jpg", // Placeholder
+        "images/Projects/Dengue Awarness.jpg",
+        "images/Projects/Dengue Awarness.jpg", // Placeholder
       ]
     },
     "medical-accessories": {
       title: "Medical Accessories and Laptop Handover Program",
       status: "Completed",
       description: "Distribution of essential medical equipment and laptops to support local health initiatives and educational programs in Bunkot, Gorkha.",
-      image: "/rotary/images/Projects/medical accessories.jpg",
+      image: "images/Projects/medical accessories.jpg",
       date: "January 15, 2024",
       location: "Bunkot, Gorkha",
       budget: "NPR 200,000",
@@ -112,8 +112,8 @@ export default async function ProjectDetail({ params }: ProjectDetailProps) {
         "Community Health Workers"
       ],
       gallery: [
-        "/rotary/images/Projects/medical accessories.jpg",
-        "/rotary/images/Projects/medical accessories.jpg", // Placeholder
+        "images/Projects/medical accessories.jpg",
+        "images/Projects/medical accessories.jpg", // Placeholder
       ]
     }
   };
