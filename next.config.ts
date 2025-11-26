@@ -9,8 +9,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-    basePath: '/rotary',
-  assetPrefix: '/rotary'
+  basePath: '/rotary',
+  assetPrefix: '/rotary/'
 };
 
 export default nextConfig;
