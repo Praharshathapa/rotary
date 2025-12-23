@@ -51,7 +51,7 @@ export default function RotaryGoalsPage() {
             <CardContent className="text-[rgb(var(--text-secondary))] leading-relaxed">
               Chartered in 1995, the Rotary Club of Kathmandu North has driven
               sustainable change for three decades. Through local service and
-              global initiatives, we uphold Rotary's highest ethical standards
+              global initiatives, we uphold Rotary&apos;s highest ethical standards
               while fostering fellowship and innovation.
             </CardContent>
           </Card>
@@ -197,7 +197,7 @@ export default function RotaryGoalsPage() {
           <GoalSection
             title="District Goals 2025–26"
             img="images/goals/district .jpg"
-            pdf="downloads/District Goals 2025-26, RID 3292.pdf"
+            pdf="images/downloads/District Goals 2025-26, RID 3292.pdf"
             data={districtGoals}
             hoverTitle="District Governor"
           />

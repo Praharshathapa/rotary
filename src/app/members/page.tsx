@@ -899,7 +899,7 @@ export default function Members() {
         {
           name: "Rtn. Shyam Nagarkoti",
           role: "Active Member",
-          image: "/rotary/viber image 2020 12 27 10 46 11?height=200&width=200",
+          image: "images/rotary/viber image 2020 12 27 10 46 11?height=200&width=200",
           width: 200,
           height: 200,
           riid: "9680769",
@@ -917,7 +917,7 @@ export default function Members() {
         {
           name: "Rtn. Ganesh Pd Poudel",
           role: "Active Member",
-          image: "",
+          image: "images/clubmembers/executive_members/Ganesh Sir.jpg?height=200&width=200",
           width: 200,
           height: 200,
           riid: "9692774",
@@ -936,7 +936,7 @@ export default function Members() {
         {
           name: "Rtn. Subash Ghimire",
           role: "Active Member",
-          image: "/rotary/Subash sir NP?height=200&width=200",
+          image: "images/rotary/Subash sir NP?height=200&width=200",
           width: 200,
           height: 200,
           riid: "10003226",
@@ -955,7 +955,7 @@ export default function Members() {
         {
           name: "Rtn. Babu Krishna Thapa",
           role: "Active Member",
-          image: "/rotary/babukrishna?height=200&width=200",
+          image: "images/rotary/babukrishna?height=200&width=200",
           width: 200,
           height: 200,
           riid: "10099938",
@@ -973,7 +973,7 @@ export default function Members() {
         {
           name: "Rtn. Sudarshan Bista",
           role: "Active Member",
-          image: "/rotary/sudarshan?height=200&width=200",
+          image: "images/rotary/sudarshan?height=200&width=200",
           width: 200,
           height: 200,
           riid: "10099939",
@@ -991,14 +991,14 @@ export default function Members() {
         {
           name: "Rtn. Kamal Dev Malla",
           role: "RIID: 10120488",
-          image: "/rotary/kamal dev?height=200&width=200",
+          image: "images/rotary/kamal dev?height=200&width=200",
           width: 200,
           height: 200,
         },
         {
           name: "Rtn. Sagar Dhakal",
           role: "Active Member",
-          image: "/rotary/IMG 9054?height=200&width=200",
+          image: "images/rotary/IMG 9054?height=200&width=200",
           width: 200,
           height: 200,
           riid: "10320266",
@@ -1016,7 +1016,7 @@ export default function Members() {
         {
           name: "Rtn. Sita Maya Poudel",
           role: "Active Member",
-          image: "/rotary/sitamaya?height=200&width=200",
+          image: "images/rotary/sitamaya?height=200&width=200",
           width: 200,
           height: 200,
           riid: "10782762",
@@ -1035,7 +1035,7 @@ export default function Members() {
         {
           name: "Rtn. Dr. Pratikchhya Shrestha",
           role: "Active Member",
-          image: "/rotary/pratikshya?height=200&width=200",
+          image: "images/rotary/pratikshya?height=200&width=200",
           width: 200,
           height: 200,
           riid: "10620116",
@@ -1053,7 +1053,7 @@ export default function Members() {
         {
           name: "Rtn. Purni Tamang",
           role: "Active Member",
-          image: "/rotary/purni?height=200&width=200",
+          image: "images/rotary/purni?height=200&width=200",
           width: 200,
           height: 200,
           riid: "11150363",
@@ -1075,7 +1075,7 @@ export default function Members() {
         {
           name: "Rtn. Nikesh Sthapit",
           role: "Active Member",
-          image: "/rotary/Nikesh Sthapit?height=200&width=200",
+          image: "images/rotary/Nikesh Sthapit?height=200&width=200",
           width: 200,
           height: 200,
           classification: "Accountancy, Waste Management Consultant",
@@ -1089,7 +1089,7 @@ export default function Members() {
         {
           name: "Rtn. Suneeta Regmi Pokhrel",
           role: "Active Member",
-          image: "/rotary/Suneeta Regmi Pokhrel?height=200&width=200",
+          image: "images/rotary/Suneeta Regmi Pokhrel?height=200&width=200",
           width: 200,
           height: 200,
           riid: "11508289",
@@ -1106,7 +1106,7 @@ export default function Members() {
         {
           name: "Rtn. Basudev Shrestha",
           role: "Active Member",
-          image: "/rotary/Basu Dev Shrestha?height=200&width=200",
+          image: "images/rotary/Basu Dev Shrestha?height=200&width=200",
           width: 200,
           height: 200,
           riid: "11511042",
@@ -1123,7 +1123,7 @@ export default function Members() {
         {
           name: "Rtn. Shyam Prasad Bhandari",
           role: "Active Member",
-          image: "/rotary/Shyam Prasad Bhandari?height=200&width=200",
+          image: "images/rotary/Shyam Prasad Bhandari?height=200&width=200",
           width: 200,
           height: 200,
           riid: "11582578",
@@ -1140,7 +1140,7 @@ export default function Members() {
         {
           name: "Rtn. Maya Ghimire",
           role: "Active Member",
-          image: "/rotary/maya?height=200&width=200",
+          image: "images/rotary/maya?height=200&width=200",
           width: 200,
           height: 200,
           riid: "11582581",
@@ -1157,7 +1157,7 @@ export default function Members() {
         {
           name: "Rtn. Shankar Khadka",
           role: "Active Member",
-          image: "/rotary/Shankar Khadka?height=200&width=200",
+          image: "images/rotary/Shankar Khadka?height=200&width=200",
           width: 200,
           height: 200,
           riid: "11582582",
@@ -1172,14 +1172,14 @@ export default function Members() {
         {
           name: "Rtn. Sugat Adhikari",
           role: "RIID: 11629037",
-          image: "/rotary/Sugat Adhikari?height=200&width=200",
+          image: "images/rotary/Sugat Adhikari?height=200&width=200",
           width: 200,
           height: 200,
         },
         {
           name: "Rtn. Dilli Raman Adhikari",
           role: "Active Member",
-          image: "/rotary/Dilli Ram Adhikari?height=200&width=200",
+          image: "images/rotary/Dilli Ram Adhikari?height=200&width=200",
           width: 200,
           height: 200,
           riid: "12148804",
@@ -1197,7 +1197,7 @@ export default function Members() {
         {
           name: "Rtn. Uttam Jung Kunwar",
           role: "Active Member",
-          image: "/rotary/Uttam?height=200&width=200",
+          image: "images/rotary/Uttam?height=200&width=200",
           width: 200,
           height: 200,
           riid: "11835152"
@@ -1447,14 +1447,14 @@ export default function Members() {
         {
           name: "Rotaract Club of Kathmandu North",
           role: "Chartered on 2023-01-01",
-          image: "/rotary/Rotaract BOD/Kathmandu North.jpg",
+          image: "images/rotary/Rotaract BOD/Kathmandu North.jpg",
           width: 200,
           height: 200,
         },
         {
           name: "Rotaract Club of Reliance College",
           role: "Chartered on 2023-01-01",
-          image: "/rotary/Rotaract BOD/Reliance.jpg",
+          image: "images/rotary/Rotaract BOD/Reliance.jpg",
           width: 200,
           height: 200,
         },
@@ -1462,8 +1462,8 @@ export default function Members() {
           name: "Rotaract Club of Kantipur Dental College",
           role: "Chartered on 2023-01-01",
           image: [
-            "/rotary/Rotaract BOD/KDC.jpg",
-            "/rotary/Rotaract BOD/KDC1.jpg",
+            "images/rotary/Rotaract BOD/KDC.jpg",
+            "images/rotary/Rotaract BOD/KDC1.jpg",
           ],
           width: 200,
           height: 200,
@@ -1472,9 +1472,9 @@ export default function Members() {
           name: "Rotaract Club of Kathmandu Medical College",
           role: "Chartered on 2023-01-01",
           image: [
-            "/rotary/Rotaract BOD/KMC.jpg",
-            "/rotary/Rotaract BOD/KMC1.jpg",
-            "/rotary/Rotaract BOD/KMC2.jpg",
+            "images/rotary/Rotaract BOD/KMC.jpg",
+            "images/rotary/Rotaract BOD/KMC1.jpg",
+            "images/rotary/Rotaract BOD/KMC2.jpg",
           ],
           width: 200,
           height: 200,
@@ -1488,7 +1488,7 @@ export default function Members() {
         {
           name: "Rotary Community Corps Sundarijal",
           role: "Charter: 16 Apr 2007",
-          image: "/rotary/community corps.png",
+          image: "images/rotary/community corps.png",
           width: 200,
           height: 200,
         },
