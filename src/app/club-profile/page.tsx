@@ -197,7 +197,7 @@ export default function RotaryGoalsPage() {
           <GoalSection
             title="District Goals 2025–26"
             img="images/goals/district .jpg"
-            pdf="images/downloads/District Goals 2025-26, RID 3292.pdf"
+            pdf="/downloads/District Goals 2025-26, RID 3292.pdf"
             data={districtGoals}
             hoverTitle="District Governor"
           />

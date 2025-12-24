@@ -31,7 +31,7 @@ export default function ProjectsGallery() {
     { image: "Education Support(Service Projects)/page_113_img_006.png", title: "Education Support Project", category: "Education Support" },
     { image: "Education Support(Service Projects)/page_113_img_007.png", title: "Education Support Project", category: "Education Support" },
     { image: "Education Support(Service Projects)/page_113_img_008.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_115_img_006.png", title: "Education Support Project", category: "Education Support" },
+    { image: "Education Support(Service Projects)/page_111_img_001.png", title: "Education Support Project", category: "Education Support" },
   ];
 
   // Global Grant photos

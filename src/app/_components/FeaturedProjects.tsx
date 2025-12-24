@@ -8,27 +8,28 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 const projects = [
   {
     title: "Talk program on PCOS",
     description:
       "A talk on PCOS and reproductive health was held on February 1 at Reliance Public School, organized by the Rotary Club of Kathmandu North and its sponsored Rotaract Clubs, with Dr. Neha Guragai and Dr. Manisha Acharya from Indira Infertility Center as resource persons.",
-    image: "/rotary/images/Projects/PCOS.jpg",
+    image: "images/Projects/PCOS.jpg",
     status: "Ongoing",
   },
   {
     title: "Dengue Awareness Campaign",
     description:
       "Dengue awareness programs have  been conducted and still going on in Dang and Kathmandu by Rotary Club of Kathmandu North led by Rtn. Dr. Sugat Adhikari.",
-    image: "/rotary/images/Projects/Dengue Awarness.jpg",
+    image: "images/Projects/Dengue Awarness.jpg",
     status: "Completed",
   },
   {
     title: "Medical Accessories and laptop handover program",
     description:
       " Handover of medical accessories and laptops to support local health initiatives in Bunkot,Gorkha.",
-    image: "/rotary/images/Projects/medical accessories.jpg",
+    image: "images/Projects/medical accessories.jpg",
     status: "Completed",
   },
 ];
@@ -43,9 +44,11 @@ export default function FeaturedProjects() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden">
-              <img
-                src={project.image}
+              <Image
+                src={`/${project.image}`}
                 alt={project.title}
+                width={600}
+                height={400}
                 className="w-full h-48 sm:h-56 lg:h-48 object-cover"
               />
               <CardHeader>

@@ -19,14 +19,6 @@ export default function EventsGallery() {
 
   // District Activities photos
   const districtActivities = [
-    { image: "District acrivities/page_107_img_001.png", title: "District Activities", category: "District Activities" },
-    { image: "District acrivities/page_107_img_002.png", title: "District Activities", category: "District Activities" },
-    { image: "District acrivities/page_107_img_003.png", title: "District Activities", category: "District Activities" },
-    { image: "District acrivities/page_107_img_004.png", title: "District Activities", category: "District Activities" },
-    { image: "District acrivities/page_107_img_005.png", title: "District Activities", category: "District Activities" },
-    { image: "District acrivities/page_107_img_006.png", title: "District Activities", category: "District Activities" },
-    { image: "District acrivities/page_107_img_007.png", title: "District Activities", category: "District Activities" },
-    { image: "District acrivities/page_107_img_008.png", title: "District Activities", category: "District Activities" },
     { image: "District acrivities/page_108_img_001.png", title: "District Activities", category: "District Activities" },
     { image: "District acrivities/page_108_img_002.png", title: "District Activities", category: "District Activities" },
     { image: "District acrivities/page_108_img_003.png", title: "District Activities", category: "District Activities" },

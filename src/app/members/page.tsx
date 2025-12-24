@@ -14,7 +14,7 @@ export default function Members() {
         {
           name: "Rtn. Pradeep Thapa",
           role: "President",
-          image: "/rotary/images/clubmembers/executive_members/Pradeep .jpg",
+          image: "images/clubmembers/executive_members/Pradeep .jpg",
           width: 200,
           height: 200,
           bio: "Experienced leader with over 15 years in community service. Passionate about youth development and education initiatives.",
@@ -37,7 +37,7 @@ export default function Members() {
           name: "Rtn. Pitamber Paudyal",
           role: "Imm. Past President",
           image:
-            "/rotary/images/clubmembers/executive_members/Pitambar-Poudel.jpg?height=200&width=200",
+            "images/clubmembers/executive_members/Pitambar-Poudel.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "Former President with extensive experience in Rotary governance and international service projects.",
@@ -60,7 +60,7 @@ export default function Members() {
           name: "Rtn. Sita Maya Poudel",
           role: "President Elect",
           image:
-            "/rotary/images/clubmembers/executive_members/sita ma'am.jpg?height=200&width=200",
+            "images/clubmembers/executive_members/sita ma'am.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "Dedicated Rotarian focused on women's empowerment and community health initiatives.",
@@ -81,7 +81,7 @@ export default function Members() {
         {
           name: "Rtn. Bishnu Poudel",
           role: "Vice President",
-          image: "/rotary/images/clubmembers/executive_members/bishnu ji .jpg",
+          image: "images/clubmembers/executive_members/bishnu ji .jpg",
           width: 200,
           height: 200,
           bio: "Active member specializing in community development and youth mentorship programs.",
@@ -102,7 +102,7 @@ export default function Members() {
           name: "Rtn. Shankar Khadka",
           role: "Vice President",
           image:
-            "/rotary/images/clubmembers/executive_members/Shankar Khadka.jpg?height=200&width=200",
+            "images/clubmembers/executive_members/Shankar Khadka.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
@@ -118,7 +118,7 @@ export default function Members() {
         {
           name: "Rtn. Dr. Banshi Sharma",
           role: "Secretary",
-          image: "/rotary/images/clubmembers/executive_members/banshi.jpg",
+          image: "images/clubmembers/executive_members/banshi.jpg",
           width: 200,
           height: 200,
           bio: "",
@@ -138,7 +138,7 @@ export default function Members() {
           name: "Rtn. Nikesh Sthapit",
           role: "Joint Secretary",
           image:
-            "/rotary/images/clubmembers/executive_members/Nikesh Sthapit.jpg?height=200&width=200",
+            "images/clubmembers/executive_members/Nikesh Sthapit.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
@@ -153,7 +153,7 @@ export default function Members() {
         {
           name: "Rtn. Rajendra Neaupane",
           role: "Treasurer",
-          image: "/rotary/images/clubmembers/executive_members/rajendra neupane.jpg",
+          image: "images/clubmembers/executive_members/rajendra neupane.jpg",
           width: 200,
           height: 200,
           bio: "",
@@ -172,7 +172,7 @@ export default function Members() {
           name: "Rtn. Uttam Khadka",
           role: "Director Membership Comm.",
           image:
-            "/rotary/images/clubmembers/executive_members/UTTAM SIR.jpg?height=200&width=200",
+            "images/clubmembers/executive_members/UTTAM SIR.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
@@ -194,7 +194,7 @@ export default function Members() {
           name: "Rtn. Ganesh Pd Poudel",
           role: "Director Club Admin Comm.",
           image:
-            "/rotary/images/clubmembers/executive_members/Ganesh Sir.jpg?height=200&width=200",
+            "images/clubmembers/executive_members/Ganesh Sir.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
@@ -215,7 +215,7 @@ export default function Members() {
           name: "Rtn. Gautam Pd. Khanal",
           role: "Director-Service Project Comm.",
           image:
-            "/rotary/images/clubmembers/executive_members/Gautam Khanal.jpg?height=200&width=200",
+            "images/clubmembers/executive_members/Gautam Khanal.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
@@ -236,7 +236,7 @@ export default function Members() {
           name: "Rtn. Subash Ghimire",
           role: "Director-Public Realtion Comm.",
           image:
-            "/rotary/images/clubmembers/executive_members/Subash sir-NP.jpg?height=200&width=200",
+            "images/clubmembers/executive_members/Subash sir-NP.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
@@ -256,7 +256,7 @@ export default function Members() {
         {
           name: "Rtn. Khem Raj Ghimire",
           role: "Director-TRF Comm.",
-          image: "/rotary/images/clubmembers/executive_members/khem.jpg",
+          image: "images/clubmembers/executive_members/khem.jpg",
           width: 200,
           height: 200,
           bio: "",
@@ -277,7 +277,7 @@ export default function Members() {
           name: "Rtn. Dilli Raman Adhikari",
           role: "Sergeant At Arms",
           image:
-            "/rotary/images/clubmembers/executive_members/Dilli-Ram.jpg?height=200&width=200",
+            "images/clubmembers/executive_members/Dilli-Ram.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
@@ -296,7 +296,7 @@ export default function Members() {
           name: "Rtn. Gopal Raj Pokhrel",
           role: "Club Mentor",
           image:
-            "/rotary/images/clubmembers/executive_members/Gopal sir.jpg?height=200&width=200",
+            "images/clubmembers/executive_members/Gopal sir.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
@@ -339,7 +339,7 @@ export default function Members() {
           name: "Rtn. Rabindra Jung Thapa",
           role: "TEACH Co-ordinator",
           image:
-            "/rotary/images/clubmembers/executive_members/Rabindra sir.jpg?height=200&width=200",
+            "images/clubmembers/executive_members/Rabindra sir.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
@@ -360,7 +360,7 @@ export default function Members() {
         {
           name: "Rtn. Bir Bahadur Tamang",
           role: "Club Trainer",
-          image: "/rotary/images/clubmembers/executive_members/bir bahadur.jpg",
+          image: "images/clubmembers/executive_members/bir bahadur.jpg",
           width: 200,
           height: 200,
           bio: "",
@@ -382,7 +382,7 @@ export default function Members() {
           name: "Rtn. Shyam Nagarkoti",
           role: "RCC Co-ordinator",
           image:
-            "/rotary/images/clubmembers/executive_members/Shyam Nagarkoti.jpg?height=200&width=200",
+            "images/clubmembers/executive_members/Shyam Nagarkoti.jpg?height=200&width=200",
           width: 200,
           height: 200,
           bio: "",
@@ -401,7 +401,7 @@ export default function Members() {
         {
           name: "Rtn. Basudev Shrestha",
           role: "Rotaratc/Interact/RCC Coordinator",
-          image: "/rotary/images/clubmembers/executive_members/Basu Dev Shrestha.jpg",
+          image: "images/clubmembers/executive_members/Basu Dev Shrestha.jpg",
           width: 200,
           height: 200,
           bio: "",
@@ -899,7 +899,7 @@ export default function Members() {
         {
           name: "Rtn. Shyam Nagarkoti",
           role: "Active Member",
-          image: "images/rotary/viber image 2020 12 27 10 46 11?height=200&width=200",
+          image: "images/clubmembers/viber image 2020 12 27 10 46 11?height=200&width=200",
           width: 200,
           height: 200,
           riid: "9680769",
@@ -936,7 +936,7 @@ export default function Members() {
         {
           name: "Rtn. Subash Ghimire",
           role: "Active Member",
-          image: "images/rotary/Subash sir NP?height=200&width=200",
+          image: "images/clubmembers/Subash sir NP?height=200&width=200",
           width: 200,
           height: 200,
           riid: "10003226",
@@ -955,7 +955,7 @@ export default function Members() {
         {
           name: "Rtn. Babu Krishna Thapa",
           role: "Active Member",
-          image: "images/rotary/babukrishna?height=200&width=200",
+          image: "images/clubmembers/babukrishna?height=200&width=200",
           width: 200,
           height: 200,
           riid: "10099938",
@@ -973,7 +973,7 @@ export default function Members() {
         {
           name: "Rtn. Sudarshan Bista",
           role: "Active Member",
-          image: "images/rotary/sudarshan?height=200&width=200",
+          image: "images/clubmembers/sudarshan?height=200&width=200",
           width: 200,
           height: 200,
           riid: "10099939",
@@ -991,14 +991,14 @@ export default function Members() {
         {
           name: "Rtn. Kamal Dev Malla",
           role: "RIID: 10120488",
-          image: "images/rotary/kamal dev?height=200&width=200",
+          image: "images/clubmembers/kamal dev?height=200&width=200",
           width: 200,
           height: 200,
         },
         {
           name: "Rtn. Sagar Dhakal",
           role: "Active Member",
-          image: "images/rotary/IMG 9054?height=200&width=200",
+          image: "images/clubmembers/IMG 9054?height=200&width=200",
           width: 200,
           height: 200,
           riid: "10320266",
@@ -1016,7 +1016,7 @@ export default function Members() {
         {
           name: "Rtn. Sita Maya Poudel",
           role: "Active Member",
-          image: "images/rotary/sitamaya?height=200&width=200",
+          image: "images/clubmembers/sitamaya?height=200&width=200",
           width: 200,
           height: 200,
           riid: "10782762",
@@ -1035,7 +1035,7 @@ export default function Members() {
         {
           name: "Rtn. Dr. Pratikchhya Shrestha",
           role: "Active Member",
-          image: "images/rotary/pratikshya?height=200&width=200",
+          image: "images/clubmembers/pratikshya?height=200&width=200",
           width: 200,
           height: 200,
           riid: "10620116",
@@ -1053,7 +1053,7 @@ export default function Members() {
         {
           name: "Rtn. Purni Tamang",
           role: "Active Member",
-          image: "images/rotary/purni?height=200&width=200",
+          image: "images/clubmembers/purni?height=200&width=200",
           width: 200,
           height: 200,
           riid: "11150363",
@@ -1075,7 +1075,7 @@ export default function Members() {
         {
           name: "Rtn. Nikesh Sthapit",
           role: "Active Member",
-          image: "images/rotary/Nikesh Sthapit?height=200&width=200",
+          image: "images/clubmembers/Nikesh Sthapit?height=200&width=200",
           width: 200,
           height: 200,
           classification: "Accountancy, Waste Management Consultant",
@@ -1089,7 +1089,7 @@ export default function Members() {
         {
           name: "Rtn. Suneeta Regmi Pokhrel",
           role: "Active Member",
-          image: "images/rotary/Suneeta Regmi Pokhrel?height=200&width=200",
+          image: "images/clubmembers/Suneeta Regmi Pokhrel?height=200&width=200",
           width: 200,
           height: 200,
           riid: "11508289",
@@ -1106,7 +1106,7 @@ export default function Members() {
         {
           name: "Rtn. Basudev Shrestha",
           role: "Active Member",
-          image: "images/rotary/Basu Dev Shrestha?height=200&width=200",
+          image: "images/clubmembers/Basu Dev Shrestha?height=200&width=200",
           width: 200,
           height: 200,
           riid: "11511042",
@@ -1123,7 +1123,7 @@ export default function Members() {
         {
           name: "Rtn. Shyam Prasad Bhandari",
           role: "Active Member",
-          image: "images/rotary/Shyam Prasad Bhandari?height=200&width=200",
+          image: "images/clubmembers/Shyam Prasad Bhandari?height=200&width=200",
           width: 200,
           height: 200,
           riid: "11582578",
@@ -1140,7 +1140,7 @@ export default function Members() {
         {
           name: "Rtn. Maya Ghimire",
           role: "Active Member",
-          image: "images/rotary/maya?height=200&width=200",
+          image: "images/clubmembers/maya?height=200&width=200",
           width: 200,
           height: 200,
           riid: "11582581",
@@ -1157,7 +1157,7 @@ export default function Members() {
         {
           name: "Rtn. Shankar Khadka",
           role: "Active Member",
-          image: "images/rotary/Shankar Khadka?height=200&width=200",
+          image: "images/clubmembers/Shankar Khadka?height=200&width=200",
           width: 200,
           height: 200,
           riid: "11582582",
@@ -1172,14 +1172,14 @@ export default function Members() {
         {
           name: "Rtn. Sugat Adhikari",
           role: "RIID: 11629037",
-          image: "images/rotary/Sugat Adhikari?height=200&width=200",
+          image: "images/clubmembers/Sugat Adhikari?height=200&width=200",
           width: 200,
           height: 200,
         },
         {
           name: "Rtn. Dilli Raman Adhikari",
           role: "Active Member",
-          image: "images/rotary/Dilli Ram Adhikari?height=200&width=200",
+          image: "images/clubmembers/Dilli Ram Adhikari?height=200&width=200",
           width: 200,
           height: 200,
           riid: "12148804",
@@ -1197,7 +1197,7 @@ export default function Members() {
         {
           name: "Rtn. Uttam Jung Kunwar",
           role: "Active Member",
-          image: "images/rotary/Uttam?height=200&width=200",
+          image: "images/clubmembers/Uttam?height=200&width=200",
           width: 200,
           height: 200,
           riid: "11835152"
@@ -1447,14 +1447,14 @@ export default function Members() {
         {
           name: "Rotaract Club of Kathmandu North",
           role: "Chartered on 2023-01-01",
-          image: "images/rotary/Rotaract BOD/Kathmandu North.jpg",
+          image: "Rotaract BOD/Kathmandu North.jpg",
           width: 200,
           height: 200,
         },
         {
           name: "Rotaract Club of Reliance College",
           role: "Chartered on 2023-01-01",
-          image: "images/rotary/Rotaract BOD/Reliance.jpg",
+          image: "Rotaract BOD/Reliance.jpg",
           width: 200,
           height: 200,
         },
@@ -1462,8 +1462,8 @@ export default function Members() {
           name: "Rotaract Club of Kantipur Dental College",
           role: "Chartered on 2023-01-01",
           image: [
-            "images/rotary/Rotaract BOD/KDC.jpg",
-            "images/rotary/Rotaract BOD/KDC1.jpg",
+            "Rotaract BOD/KDC.jpg",
+            "Rotaract BOD/KDC1.jpg",
           ],
           width: 200,
           height: 200,
@@ -1472,9 +1472,9 @@ export default function Members() {
           name: "Rotaract Club of Kathmandu Medical College",
           role: "Chartered on 2023-01-01",
           image: [
-            "images/rotary/Rotaract BOD/KMC.jpg",
-            "images/rotary/Rotaract BOD/KMC1.jpg",
-            "images/rotary/Rotaract BOD/KMC2.jpg",
+            "Rotaract BOD/KMC.jpg",
+            "Rotaract BOD/KMC1.jpg",
+            "Rotaract BOD/KMC2.jpg",
           ],
           width: 200,
           height: 200,
@@ -1488,7 +1488,7 @@ export default function Members() {
         {
           name: "Rotary Community Corps Sundarijal",
           role: "Charter: 16 Apr 2007",
-          image: "images/rotary/community corps.png",
+          image: "community corps.png",
           width: 200,
           height: 200,
         },

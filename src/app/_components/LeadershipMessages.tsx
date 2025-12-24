@@ -10,7 +10,7 @@ export default function LeadershipMessages() {
       title: "RI President Message",
       name: "RIPR Gordon McInally",
       position: "Rotary International President 2024-25",
-      image: "/rotary/images/goals/RI president.png",
+      image: "images/goals/RI president.png",
       message: "Rotary's mission to create lasting change in our communities has never been more important. Through our collective efforts in the seven Areas of Focus, we continue to build a better world where peace, health, and prosperity flourish for all.",
       pdf: "/downloads/RI_President_Message_2024-25.pdf",
       theme: "Create Hope in the World"
@@ -19,7 +19,7 @@ export default function LeadershipMessages() {
       title: "District Governor Message",
       name: "DG Dr. Rajendra Man Shrestha",
       position: "District Governor 2024-25, RID 3292",
-      image: "/rotary/images/goals/district .jpg",
+      image: "images/goals/district .jpg",
       message: "As we embark on another year of service, let us focus on strengthening our clubs, expanding our impact, and building bridges of understanding across our diverse communities. Together, we can achieve extraordinary things.",
       pdf: "/downloads/DG_Message_2024-25.pdf",
       theme: "Rotary Opens Opportunities"
@@ -28,7 +28,7 @@ export default function LeadershipMessages() {
       title: "Club President Message",
       name: "Rtn. Pradeep Thapa",
       position: "President 2024-25, RC Kathmandu North",
-      image: "/rotary/images/clubmembers/executive_members/Pradeep .jpg",
+      image: "images/clubmembers/executive_members/Pradeep .jpg",
       message: "It is an honor to serve as President of our esteemed club. This year, we will focus on membership growth, impactful service projects, and strengthening our fellowship. Let us work together to make a meaningful difference in our community.",
       pdf: "/downloads/President_Message_2024-25.pdf",
       theme: "Service Above Self"

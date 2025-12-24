@@ -8,12 +8,12 @@ export default function GalleryPhotos() {
   const galleryPhotos = [
     // Events
     { image: "Installation ceremony/page_105_img_001.png", title: "Installation Ceremony", category: "Events", link: "/gallery/events" },
-    { image: "District acrivities/page_107_img_001.png", title: "District Activities", category: "Events", link: "/gallery/events" },
+    { image: "District acrivities/page_108_img_001.png", title: "District Activities", category: "Events", link: "/gallery/events" },
     { image: "Tree plantation/page_111_img_001.png", title: "Tree Plantation", category: "Events", link: "/gallery/events" },
     
     // Celebrations
     { image: "Charters day and DG visit/page_109_img_001.png", title: "Charter Day and DG Visit", category: "Celebrations", link: "/gallery/celebrations" },
-    { image: "picnic and social gathering/page_119_img_001.png", title: "Picnic and Social Gathering", category: "Celebrations", link: "/gallery/celebrations" },
+    { image: "/picnic and social gathering/page_119_img_001.png", title: "Picnic and Social Gathering", category: "Celebrations", link: "/gallery/celebrations" },
     
     // Meetings
     { image: "BOD meeting/page_106_img_001.png", title: "BOD Meeting", category: "Meetings", link: "/gallery/meetings" },

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
     return (
       <section className="relative bg-blue-900 py-16">
@@ -9,14 +11,16 @@ export default function Hero() {
               <p className="text-xl text-white mb-8">Creating hope in the world through service and leadership</p>
             </div>
             <div className="text-center bg-blue-800 p-8 rounded-lg">
-              <img
-                src="/placeholder.svg?height=400&width=300"
-                alt="Mr. Subash Ghimire - President"
+              <Image
+                src="images/clubmembers/executive_members/Pradeep .jpg"
+                alt="Mr. Pradeep Thapa - President"
+                width={300}
+                height={400}
                 className="mx-auto mb-4 rounded-lg"
               />
-              <h3 className="text-2xl font-bold text-white mb-2">Mr. Subash Ghimire</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">Mr. Pradeep Thapa</h3>
               <p className="text-xl text-yellow-500 mb-4">PRESIDENT</p>
-              <p className="text-white">Rotary Year 2023-24</p>
+              <p className="text-white">Rotary Year 2025-26</p>
             </div>
           </div>
         </div>

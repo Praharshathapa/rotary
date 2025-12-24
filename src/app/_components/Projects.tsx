@@ -5,25 +5,26 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Image from "next/image";
 
 const projects = [
   {
     title: "Talk program on PCOS",
     description:
       "A talk on PCOS and reproductive health was held on February 1 at Reliance Public School, organized by the Rotary Club of Kathmandu North and its sponsored Rotaract Clubs, with Dr. Neha Guragai and Dr. Manisha Acharya from Indira Infertility Center as resource persons.",
-      image: "/rotary/images/Projects/PCOS.jpg",
+      image: "images/Projects/PCOS.jpg",
   },
   {
     title: "Dengue Awareness Campaign",
     description:
       "Dengue awareness programs have  been conducted and still going on in Dang and Kathmandu by Rotary Club of Kathmandu North led by Rtn. Dr. Sugat Adhikari.",
-      image: "/rotary/images/Projects/Dengue Awarness.jpg",
+      image: "images/Projects/Dengue Awarness.jpg",
   },
   {
     title: "Medical Accessories and laptop handover program",
       description:
         " Handover of medical accessories and laptops to support local health initiatives in Bunkot,Gorkha.",
-      image: "/rotary/images/Projects/medical accessories.jpg",
+      image: "images/Projects/medical accessories.jpg",
   },
 ];
 
@@ -41,9 +42,11 @@ export default function Projects() {
                 <CardTitle>{project.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <img
-                  src={project.image}
+                <Image
+                  src={`/${project.image}`}
                   alt={project.title}
+                  width={600}
+                  height={400}
                   className="w-full h-48 object-cover mb-4 rounded-md"
                 />
                 <CardDescription>{project.description}</CardDescription>

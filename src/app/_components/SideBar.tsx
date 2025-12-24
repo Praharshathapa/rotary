@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import Image from "next/image"
 
 export default function Sidebar() {
   const navigationLinks = [
@@ -46,15 +47,17 @@ export default function Sidebar() {
         </CardHeader>
         <CardContent>
           <div className="text-center">
-            <img
-              src="/placeholder.svg?height=200&width=200"
+            <Image
+              src="images/goals/RI president.png"
               alt="RI President"
+              width={200}
+              height={200}
               className="mx-auto mb-4 rounded-full"
             />
-            <h3 className="font-bold mb-2">R. Gordon R. McInally</h3>
-            <p className="text-sm text-gray-600 mb-4">RI President 2023-24</p>
+            <h3 className="font-bold mb-2"></h3>
+            <p className="text-sm text-gray-600 mb-4">RIPR Gordon McInally</p>
             <p className="text-sm">
-              Even as we face new and serious challenges, Rotary is...
+              Even as we face new and serious challenges, Rotary is creating hope in the world through service and leadership.
             </p>
             <Link
               href="#"

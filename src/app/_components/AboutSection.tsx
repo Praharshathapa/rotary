@@ -44,7 +44,7 @@ export default function AboutSection() {
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Chartered in 1995, the Rotary Club of Kathmandu North has been a beacon of hope and service 
               in Nepal for over three decades. We are part of Rotary International, a global network of 
-              community leaders who work together to address the world's most persistent challenges.
+              community leaders who work together to address the world&apos;s most persistent challenges.
             </p>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
               Our club focuses on seven key areas: promoting peace, fighting disease, providing clean water, 

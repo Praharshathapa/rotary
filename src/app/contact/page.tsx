@@ -21,7 +21,7 @@ export default function Contact() {
       <div className="text-center mb-12">
         <h1 className="text-3xl font-bold text-blue-900 mb-4">Contact Us</h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Get in touch with the Rotary Club of Kathmandu North. We'd love to hear from you and answer any questions you may have.
+          Get in touch with the Rotary Club of Kathmandu North. We&apos;d love to hear from you and answer any questions you may have.
         </p>
       </div>
 

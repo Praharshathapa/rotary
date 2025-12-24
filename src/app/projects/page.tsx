@@ -6,7 +6,7 @@ import { Download, FileText } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function Projects() {
-  const pdfPath = "/rotary/downloads/Rotary Action Plan 2024-25.pdf";
+  const pdfPath = "/downloads/Rotary Action Plan 2024-25.pdf";
   const pdfUrl = encodeURI(pdfPath);
   const [pdfError, setPdfError] = useState(false);
 
