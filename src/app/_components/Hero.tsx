@@ -12,7 +12,7 @@ export default function Hero() {
             </div>
             <div className="text-center bg-blue-800 p-8 rounded-lg">
               <Image
-                src="images/clubmembers/executive_members/Pradeep .jpg"
+                src="/images/clubmembers/executive_members/Pradeep .jpg"
                 alt="Mr. Pradeep Thapa - President"
                 width={300}
                 height={400}

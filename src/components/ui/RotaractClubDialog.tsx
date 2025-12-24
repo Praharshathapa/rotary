@@ -36,7 +36,7 @@ export function RotaractClubDialog({ club }: RotaractClubDialogProps) {
                 {images.length === 1 ? (
                   <div className="w-full mx-auto mb-4 rounded-lg overflow-hidden">
                     <Image
-                      src={primaryImage}
+                      src={primaryImage.startsWith('/') ? primaryImage : `/${primaryImage}`}
                       alt={club.name}
                       width={club.width || 800}
                       height={club.height || 600}
@@ -48,7 +48,7 @@ export function RotaractClubDialog({ club }: RotaractClubDialogProps) {
                     {images.map((img, index) => (
                       <div key={index} className="w-full mx-auto rounded-lg overflow-hidden">
                         <Image
-                          src={img}
+                          src={img.startsWith('/') ? img : `/${img}`}
                           alt={`${club.name} - Image ${index + 1}`}
                           width={club.width || 400}
                           height={club.height || 300}

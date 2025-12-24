@@ -47,7 +47,7 @@ export function MemberDialog({ member }: MemberDialogProps) {
         <div className="grid gap-4 py-4">
           <div className="text-center">
             <Avatar className="w-24 h-24 sm:w-32 sm:h-32 rounded-full mx-auto mb-4 object-cover">
-              <AvatarImage src={member.image} />
+              <AvatarImage src={member.image ? (member.image.startsWith('/') ? member.image : `/${member.image}`) : member.image} />
               <AvatarFallback>{(() => {
                 const nameParts = member.name.split(' ').filter(part => part && !part.includes('*'));
                 const actualName = nameParts.slice(1);

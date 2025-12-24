@@ -86,7 +86,7 @@ export default function Carousel({ items, autoPlayInterval = 5000 }: CarouselPro
           }`}
         >
           <Image
-            src={item.image || "/placeholder.svg"}
+            src={item.image ? (item.image.startsWith('/') ? item.image : `/${item.image}`) : "/placeholder.svg"}
             alt={item.title}
             fill
             className="object-cover object-center"

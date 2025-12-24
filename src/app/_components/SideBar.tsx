@@ -48,7 +48,7 @@ export default function Sidebar() {
         <CardContent>
           <div className="text-center">
             <Image
-              src="images/goals/RI president.png"
+              src="/images/goals/RI president.png"
               alt="RI President"
               width={200}
               height={200}

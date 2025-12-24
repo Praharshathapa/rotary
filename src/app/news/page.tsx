@@ -36,11 +36,15 @@ export default function News() {
           <Card key={index}>
             <div className="md:flex">
               <div className="md:w-1/3">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-48 object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none"
-                />
+                {item.image && (
+                  <Image
+                    src={item.image.startsWith('/') ? item.image : `/${item.image}`}
+                    alt={item.title}
+                    width={400}
+                    height={300}
+                    className="w-full h-48 object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none"
+                  />
+                )}
               </div>
               <div className="md:w-2/3 p-6">
                 <CardHeader>

@@ -65,7 +65,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="relative h-96 lg:h-[500px] rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="images/rotarylogo.png"
+                src="/images/rotarylogo.png"
                 alt="Rotary Club of Kathmandu North"
                 fill
                 className="object-cover"

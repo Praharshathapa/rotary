@@ -52,7 +52,7 @@ export default function LeadershipMessages() {
             <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative h-64">
                 <Image
-                  src={message.image}
+                  src={message.image.startsWith('/') ? message.image : `/${message.image}`}
                   alt={message.name}
                   fill
                   className="object-cover"

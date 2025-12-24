@@ -5,6 +5,14 @@ import { RotaractClubDialog } from "../../components/ui/RotaractClubDialog";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
 
+// Helper function to normalize image paths
+function normalizeImagePath(image: string | string[] | undefined): string {
+  if (!image) return '';
+  const img = Array.isArray(image) ? image[0] : image;
+  if (!img) return '';
+  return img.startsWith('/') ? img : `/${img}`;
+}
+
 export default function Members() {
   const memberCategories = [
     {
@@ -1514,7 +1522,7 @@ export default function Members() {
                 <Card className="max-w-4xl w-full">
                   <CardContent className="p-6">
                     <Image
-                      src={Array.isArray(category.members[0].image) ? category.members[0].image[0] : category.members[0].image}
+                      src={normalizeImagePath(category.members[0].image) || '/placeholder.svg'}
                       alt={category.members[0].name}
                       width={800}
                       height={600}
@@ -1533,7 +1541,7 @@ export default function Members() {
                           <>
                             <div className="w-full mx-auto mb-3 sm:mb-4 rounded-lg overflow-hidden">
                               <Image
-                                src={Array.isArray(member.image) ? member.image[0] : member.image}
+                                src={normalizeImagePath(member.image) || '/placeholder.svg'}
                                 alt={member.name}
                                 width={member.width || 400}
                                 height={member.height || 300}
@@ -1552,7 +1560,7 @@ export default function Members() {
                         ) : (
                           <>
                             <Avatar className="w-24 h-24 sm:w-32 sm:h-32 rounded-full mx-auto mb-3 sm:mb-4 object-cover flex-shrink-0">
-                              <AvatarImage src={Array.isArray(member.image) ? member.image[0] : member.image} />
+                              <AvatarImage src={normalizeImagePath(member.image) || undefined} />
                               <AvatarFallback>
                                 {(() => {
                                   const nameParts = member.name
@@ -1572,7 +1580,7 @@ export default function Members() {
 
                             <div className="flex-1 flex flex-col justify-center min-h-[60px]">
                               {category.id === "executive" || category.id === "active" ? (
-                                <MemberDialog member={{ ...member, image: Array.isArray(member.image) ? member.image[0] : member.image } as Parameters<typeof MemberDialog>[0]['member']} />
+                                <MemberDialog member={{ ...member, image: normalizeImagePath(member.image) } as Parameters<typeof MemberDialog>[0]['member']} />
                               ) : (
                                 <h3 className="font-bold text-base sm:text-lg break-words px-2">
                                   {member.name}

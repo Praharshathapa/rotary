@@ -46,12 +46,12 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
-      <link rel="icon" href="images/rotarylogo.png" />
+      <link rel="icon" href="/images/rotarylogo.png" />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           <Link href="/" className="flex items-center gap-2 sm:gap-4">
             <Image
-              src="images/rotarylogo.png"
+              src="/images/rotarylogo.png"
               alt="Rotary Logo"
               width={80}
               height={80}

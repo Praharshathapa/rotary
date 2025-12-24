@@ -47,11 +47,15 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
           <p className="text-gray-500 mt-2">{article.date}</p>
         </CardHeader>
         <CardContent>
-          <Image
-            src={article.image}
-            alt={article.title}
-            className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg mb-6"
-          />
+          {article.image && (
+            <Image
+              src={article.image.startsWith('/') ? article.image : `/${article.image}`}
+              alt={article.title}
+              width={800}
+              height={600}
+              className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg mb-6"
+            />
+          )}
           <div className="prose max-w-none">
             <p className="text-gray-700 leading-relaxed">{article.content}</p>
           </div>
