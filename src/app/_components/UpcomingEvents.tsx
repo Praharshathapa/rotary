@@ -43,7 +43,7 @@ export default function UpcomingEvents() {
                 <p className="mb-4">{event.description}</p>
                 <p className="text-sm text-gray-600 mb-4">{event.location}</p>
                 <Button asChild variant="outline">
-                  <Link href="/events">Learn More</Link>
+                  <Link href="/gallery/events">Learn More</Link>
                 </Button>
               </CardContent>
             </Card>

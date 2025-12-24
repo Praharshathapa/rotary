@@ -9,7 +9,8 @@ export default function GalleryPhotos() {
     // Events
     { image: "Installation ceremony/page_105_img_001.png", title: "Installation Ceremony", category: "Events", link: "/gallery/events" },
     { image: "District acrivities/page_108_img_001.png", title: "District Activities", category: "Events", link: "/gallery/events" },
-    { image: "Tree plantation/page_111_img_001.png", title: "Tree Plantation", category: "Events", link: "/gallery/events" },
+    // Tree Plantation removed until images are available in public/Tree plantation folder
+    // { image: "Tree plantation/page_111_img_001.png", title: "Tree Plantation", category: "Events", link: "/gallery/events" },
     
     // Celebrations
     { image: "Charters day and DG visit/page_109_img_001.png", title: "Charter Day and DG Visit", category: "Celebrations", link: "/gallery/celebrations" },
@@ -20,8 +21,8 @@ export default function GalleryPhotos() {
     { image: "weekly regular meeting/page_117_img_001.png", title: "Weekly Regular Meeting", category: "Meetings", link: "/gallery/meetings" },
     { image: "Rotaract,Interact and RCC/page_115_img_001.png", title: "Rotaract, Interact and RCC", category: "Meetings", link: "/gallery/meetings" },
     
-    // Projects
-    { image: "images/Projects/PCOS.jpg", title: "PCOS Awareness Program", category: "Projects", link: "/gallery/projects" },
+    // Projects - Using placeholder until images are added
+    { image: "/images/rotarylogo.png", title: "PCOS Awareness Program", category: "Projects", link: "/gallery/projects" },
     { image: "Education Support(Service Projects)/page_112_img_001.png", title: "Education Support Project", category: "Projects", link: "/gallery/projects" },
     { image: "global grant/page_114_img_001.png", title: "Global Grant Project", category: "Projects", link: "/gallery/projects" },
   ];

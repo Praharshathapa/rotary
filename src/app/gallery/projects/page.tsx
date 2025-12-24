@@ -52,26 +52,26 @@ export default function ProjectsGallery() {
   const featuredProjects: ProjectPhoto[] = [
     {
       title: "Talk program on PCOS",
-      image: "images/Projects/PCOS.jpg",
+      image: "/images/rotarylogo.png", // Placeholder until image is added to public/images/Projects/
       date: "February 1, 2024",
       description: "A comprehensive awareness program on PCOS and reproductive health",
-      link: "/projects/pcos-awareness",
+      // Removed link - page doesn't exist
       category: "Health Awareness"
     },
     {
       title: "Dengue Awareness Campaign",
-      image: "images/Projects/Dengue Awarness.jpg",
+      image: "/images/rotarylogo.png", // Placeholder until image is added to public/images/Projects/
       date: "2024",
       description: "Dengue awareness programs conducted in Dang and Kathmandu",
-      link: "/projects/dengue-awareness",
+      // Removed link - page doesn't exist
       category: "Health Awareness"
     },
     {
       title: "Medical Accessories and Laptop Handover",
-      image: "images/Projects/medical accessories.jpg",
+      image: "/images/rotarylogo.png", // Placeholder until image is added to public/images/Projects/
       date: "January 15, 2024",
       description: "Distribution of medical equipment and laptops in Bunkot, Gorkha",
-      link: "/projects/medical-accessories",
+      // Removed link - page doesn't exist
       category: "Community Support"
     },
   ];

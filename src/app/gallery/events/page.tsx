@@ -29,20 +29,20 @@ export default function EventsGallery() {
     { image: "District acrivities/page_108_img_008.png", title: "District Activities", category: "District Activities" },
   ];
 
-  // Tree Plantation photos
-  const treePlantation = [
-    { image: "Tree plantation/page_111_img_001.png", title: "Tree Plantation", category: "Tree Plantation" },
-    { image: "Tree plantation/page_111_img_002.png", title: "Tree Plantation", category: "Tree Plantation" },
-    { image: "Tree plantation/page_111_img_003.png", title: "Tree Plantation", category: "Tree Plantation" },
-    { image: "Tree plantation/page_111_img_004.png", title: "Tree Plantation", category: "Tree Plantation" },
-    { image: "Tree plantation/page_111_img_005.png", title: "Tree Plantation", category: "Tree Plantation" },
-    { image: "Tree plantation/page_111_img_006.png", title: "Tree Plantation", category: "Tree Plantation" },
-    { image: "Tree plantation/page_111_img_007.png", title: "Tree Plantation", category: "Tree Plantation" },
-    { image: "Tree plantation/page_111_img_008.png", title: "Tree Plantation", category: "Tree Plantation" },
-    { image: "Tree plantation/page_111_img_009.png", title: "Tree Plantation", category: "Tree Plantation" },
-  ];
+  // Tree Plantation photos - Commented out until images are added to public/Tree plantation folder
+  // const treePlantation = [
+  //   { image: "Tree plantation/page_111_img_001.png", title: "Tree Plantation", category: "Tree Plantation" },
+  //   { image: "Tree plantation/page_111_img_002.png", title: "Tree Plantation", category: "Tree Plantation" },
+  //   { image: "Tree plantation/page_111_img_003.png", title: "Tree Plantation", category: "Tree Plantation" },
+  //   { image: "Tree plantation/page_111_img_004.png", title: "Tree Plantation", category: "Tree Plantation" },
+  //   { image: "Tree plantation/page_111_img_005.png", title: "Tree Plantation", category: "Tree Plantation" },
+  //   { image: "Tree plantation/page_111_img_006.png", title: "Tree Plantation", category: "Tree Plantation" },
+  //   { image: "Tree plantation/page_111_img_007.png", title: "Tree Plantation", category: "Tree Plantation" },
+  //   { image: "Tree plantation/page_111_img_008.png", title: "Tree Plantation", category: "Tree Plantation" },
+  //   { image: "Tree plantation/page_111_img_009.png", title: "Tree Plantation", category: "Tree Plantation" },
+  // ];
 
-  const eventPhotos = [...installationPhotos, ...districtActivities, ...treePlantation];
+  const eventPhotos = [...installationPhotos, ...districtActivities]; // Removed treePlantation until images are available
 
   return (
     <div className="container mx-auto px-4 py-8">

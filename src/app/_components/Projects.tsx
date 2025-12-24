@@ -12,19 +12,19 @@ const projects = [
     title: "Talk program on PCOS",
     description:
       "A talk on PCOS and reproductive health was held on February 1 at Reliance Public School, organized by the Rotary Club of Kathmandu North and its sponsored Rotaract Clubs, with Dr. Neha Guragai and Dr. Manisha Acharya from Indira Infertility Center as resource persons.",
-      image: "images/Projects/PCOS.jpg",
+      image: "/images/rotarylogo.png", // Placeholder until image is added to public/images/Projects/
   },
   {
     title: "Dengue Awareness Campaign",
     description:
       "Dengue awareness programs have  been conducted and still going on in Dang and Kathmandu by Rotary Club of Kathmandu North led by Rtn. Dr. Sugat Adhikari.",
-      image: "images/Projects/Dengue Awarness.jpg",
+      image: "/images/rotarylogo.png", // Placeholder until image is added to public/images/Projects/
   },
   {
     title: "Medical Accessories and laptop handover program",
       description:
         " Handover of medical accessories and laptops to support local health initiatives in Bunkot,Gorkha.",
-      image: "images/Projects/medical accessories.jpg",
+      image: "/images/rotarylogo.png", // Placeholder until image is added to public/images/Projects/
   },
 ];
 
@@ -43,7 +43,7 @@ export default function Projects() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src={`/${project.image}`}
+                  src={project.image}
                   alt={project.title}
                   width={600}
                   height={400}

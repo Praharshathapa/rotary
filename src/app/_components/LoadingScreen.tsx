@@ -23,7 +23,7 @@ export default function LoadingScreen() {
         >
           <div className="text-center">
             <Image
-              src="images/loading.pmg"
+              src="/images/loading.png"
               alt="Rotary Logo"
               width={150}
               height={150}

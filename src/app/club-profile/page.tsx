@@ -189,21 +189,21 @@ export default function RotaryGoalsPage() {
         <section className="animate-fade-up">
           <GoalSection
             title="Rotary International Goals 2025–26"
-            img="images/goals/RI president.png"
+            img="/images/goals/RI president.png"
             pdf="/downloads/RI_Goals_2025-26.pdf"
             data={riGoals}
             hoverTitle="RI President"
           />
           <GoalSection
             title="District Goals 2025–26"
-            img="images/goals/district .jpg"
+            img="/images/goals/district .jpg"
             pdf="/downloads/District Goals 2025-26, RID 3292.pdf"
             data={districtGoals}
             hoverTitle="District Governor"
           />
           <GoalSection
             title="Club President Goals 2025–26"
-            img="images/goals/president goals.jpg"
+            img="/images/goals/president goals.jpg"
             pdf="/downloads/President_Goals_2025-26.pdf"
             data={presidentGoals}
             hoverTitle="Club President"
