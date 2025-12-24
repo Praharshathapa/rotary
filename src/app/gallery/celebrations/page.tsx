@@ -52,7 +52,7 @@ export default function CelebrationsGallery() {
           <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
             <div className="relative aspect-square">
               <Image
-                src={photo.image}
+                src={`/${photo.image}`}
                 alt={photo.title}
                 fill
                 className="object-cover"

@@ -13,7 +13,7 @@ export default function GalleryPhotos() {
     
     // Celebrations
     { image: "Charters day and DG visit/page_109_img_001.png", title: "Charter Day and DG Visit", category: "Celebrations", link: "/gallery/celebrations" },
-    { image: "/picnic and social gathering/page_119_img_001.png", title: "Picnic and Social Gathering", category: "Celebrations", link: "/gallery/celebrations" },
+    { image: "picnic and social gathering/page_119_img_001.png", title: "Picnic and Social Gathering", category: "Celebrations", link: "/gallery/celebrations" },
     
     // Meetings
     { image: "BOD meeting/page_106_img_001.png", title: "BOD Meeting", category: "Meetings", link: "/gallery/meetings" },
@@ -43,7 +43,7 @@ export default function GalleryPhotos() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer h-full">
                 <div className="relative aspect-square">
                   <Image
-                    src={photo.image}
+                    src={photo.image.startsWith('/') ? photo.image : `/${photo.image}`}
                     alt={photo.title}
                     fill
                     className="object-cover"

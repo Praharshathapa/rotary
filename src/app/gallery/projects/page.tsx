@@ -95,7 +95,7 @@ export default function ProjectsGallery() {
             <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer h-full">
               <div className="relative aspect-square">
                 <Image
-                  src={photo.image}
+                  src={photo.image.startsWith('/') ? photo.image : `/${photo.image}`}
                   alt={photo.title}
                   fill
                   className="object-cover"
