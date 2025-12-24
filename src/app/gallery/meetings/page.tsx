@@ -4,60 +4,60 @@ import Image from "next/image";
 export default function MeetingsGallery() {
   // BOD Meeting photos
   const bodMeetings = [
-    { image: "BOD meeting/page_106_img_001.png", title: "BOD Meeting", category: "BOD Meeting" },
-    { image: "BOD meeting/page_106_img_002.png", title: "BOD Meeting", category: "BOD Meeting" },
-    { image: "BOD meeting/page_106_img_003.png", title: "BOD Meeting", category: "BOD Meeting" },
-    { image: "BOD meeting/page_106_img_004.png", title: "BOD Meeting", category: "BOD Meeting" },
-    { image: "BOD meeting/page_106_img_005.png", title: "BOD Meeting", category: "BOD Meeting" },
-    { image: "BOD meeting/page_106_img_006.png", title: "BOD Meeting", category: "BOD Meeting" },
+    { image: "/BOD meeting/page_106_img_001.png", title: "BOD Meeting", category: "BOD Meeting" },
+    { image: "/BOD meeting/page_106_img_002.png", title: "BOD Meeting", category: "BOD Meeting" },
+    { image: "/BOD meeting/page_106_img_003.png", title: "BOD Meeting", category: "BOD Meeting" },
+    { image: "/BOD meeting/page_106_img_004.png", title: "BOD Meeting", category: "BOD Meeting" },
+    { image: "/BOD meeting/page_106_img_005.png", title: "BOD Meeting", category: "BOD Meeting" },
+    { image: "/BOD meeting/page_106_img_006.png", title: "BOD Meeting", category: "BOD Meeting" },
   ];
 
   // Weekly Regular Meeting photos
   const weeklyMeetings = [
-    { image: "weekly regular meeting/page_117_img_001.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_117_img_002.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_117_img_003.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_117_img_004.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_117_img_005.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_117_img_006.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_117_img_007.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_117_img_008.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_117_img_009.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_117_img_010.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_118_img_001.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_118_img_002.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_118_img_003.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_118_img_004.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_118_img_005.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_118_img_006.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_118_img_007.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_118_img_008.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_118_img_009.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_118_img_010.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_118_img_011.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
-    { image: "weekly regular meeting/page_118_img_012.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_117_img_001.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_117_img_002.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_117_img_003.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_117_img_004.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_117_img_005.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_117_img_006.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_117_img_007.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_117_img_008.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_117_img_009.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_117_img_010.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_118_img_001.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_118_img_002.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_118_img_003.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_118_img_004.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_118_img_005.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_118_img_006.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_118_img_007.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_118_img_008.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_118_img_009.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_118_img_010.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_118_img_011.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
+    { image: "/weekly regular meeting/page_118_img_012.png", title: "Weekly Regular Meeting", category: "Weekly Meeting" },
   ];
 
   // Rotaract, Interact and RCC photos
   const rotaractMeetings = [
-    { image: "Rotaract,Interact and RCC/page_115_img_001.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_115_img_002.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_115_img_003.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_115_img_004.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_115_img_005.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_115_img_007.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_115_img_008.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_115_img_009.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_116_img_001.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_116_img_002.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_116_img_003.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_116_img_004.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_116_img_005.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_116_img_006.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_116_img_007.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_116_img_008.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_116_img_009.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
-    { image: "Rotaract,Interact and RCC/page_116_img_010.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_115_img_001.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_115_img_002.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_115_img_003.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_115_img_004.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_115_img_005.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_115_img_007.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_115_img_008.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_115_img_009.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_116_img_001.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_116_img_002.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_116_img_003.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_116_img_004.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_116_img_005.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_116_img_006.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_116_img_007.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_116_img_008.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_116_img_009.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
+    { image: "/Rotaract,Interact and RCC/page_116_img_010.png", title: "Rotaract, Interact and RCC", category: "Rotaract/Interact" },
   ];
 
   const allMeetings = [...bodMeetings, ...weeklyMeetings, ...rotaractMeetings];
@@ -78,7 +78,7 @@ export default function MeetingsGallery() {
           <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
             <div className="relative aspect-square">
               <Image
-                src={`/${photo.image}`}
+                src={photo.image}
                 alt={photo.title}
                 fill
                 className="object-cover"

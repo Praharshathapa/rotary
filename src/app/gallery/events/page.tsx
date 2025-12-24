@@ -4,29 +4,29 @@ import Image from "next/image";
 export default function EventsGallery() {
   // Installation Ceremony photos
   const installationPhotos = [
-    { image: "Installation ceremony/page_105_img_001.png", title: "Installation Ceremony", category: "Installation" },
-    { image: "Installation ceremony/page_105_img_002.png", title: "Installation Ceremony", category: "Installation" },
-    { image: "Installation ceremony/page_105_img_003.png", title: "Installation Ceremony", category: "Installation" },
-    { image: "Installation ceremony/page_105_img_004.png", title: "Installation Ceremony", category: "Installation" },
-    { image: "Installation ceremony/page_105_img_005.png", title: "Installation Ceremony", category: "Installation" },
-    { image: "Installation ceremony/page_105_img_006.png", title: "Installation Ceremony", category: "Installation" },
-    { image: "Installation ceremony/page_105_img_007.png", title: "Installation Ceremony", category: "Installation" },
-    { image: "Installation ceremony/page_105_img_008.png", title: "Installation Ceremony", category: "Installation" },
-    { image: "Installation ceremony/page_105_img_009.png", title: "Installation Ceremony", category: "Installation" },
-    { image: "Installation ceremony/page_105_img_010.png", title: "Installation Ceremony", category: "Installation" },
-    { image: "Installation ceremony/page_105_img_011.png", title: "Installation Ceremony", category: "Installation" },
+    { image: "/Installation ceremony/page_105_img_001.png", title: "Installation Ceremony", category: "Installation" },
+    { image: "/Installation ceremony/page_105_img_002.png", title: "Installation Ceremony", category: "Installation" },
+    { image: "/Installation ceremony/page_105_img_003.png", title: "Installation Ceremony", category: "Installation" },
+    { image: "/Installation ceremony/page_105_img_004.png", title: "Installation Ceremony", category: "Installation" },
+    { image: "/Installation ceremony/page_105_img_005.png", title: "Installation Ceremony", category: "Installation" },
+    { image: "/Installation ceremony/page_105_img_006.png", title: "Installation Ceremony", category: "Installation" },
+    { image: "/Installation ceremony/page_105_img_007.png", title: "Installation Ceremony", category: "Installation" },
+    { image: "/Installation ceremony/page_105_img_008.png", title: "Installation Ceremony", category: "Installation" },
+    { image: "/Installation ceremony/page_105_img_009.png", title: "Installation Ceremony", category: "Installation" },
+    { image: "/Installation ceremony/page_105_img_010.png", title: "Installation Ceremony", category: "Installation" },
+    { image: "/Installation ceremony/page_105_img_011.png", title: "Installation Ceremony", category: "Installation" },
   ];
 
   // District Activities photos
   const districtActivities = [
-    { image: "District acrivities/page_108_img_001.png", title: "District Activities", category: "District Activities" },
-    { image: "District acrivities/page_108_img_002.png", title: "District Activities", category: "District Activities" },
-    { image: "District acrivities/page_108_img_003.png", title: "District Activities", category: "District Activities" },
-    { image: "District acrivities/page_108_img_004.png", title: "District Activities", category: "District Activities" },
-    { image: "District acrivities/page_108_img_005.png", title: "District Activities", category: "District Activities" },
-    { image: "District acrivities/page_108_img_006.png", title: "District Activities", category: "District Activities" },
-    { image: "District acrivities/page_108_img_007.png", title: "District Activities", category: "District Activities" },
-    { image: "District acrivities/page_108_img_008.png", title: "District Activities", category: "District Activities" },
+    { image: "/District acrivities/page_108_img_001.png", title: "District Activities", category: "District Activities" },
+    { image: "/District acrivities/page_108_img_002.png", title: "District Activities", category: "District Activities" },
+    { image: "/District acrivities/page_108_img_003.png", title: "District Activities", category: "District Activities" },
+    { image: "/District acrivities/page_108_img_004.png", title: "District Activities", category: "District Activities" },
+    { image: "/District acrivities/page_108_img_005.png", title: "District Activities", category: "District Activities" },
+    { image: "/District acrivities/page_108_img_006.png", title: "District Activities", category: "District Activities" },
+    { image: "/District acrivities/page_108_img_007.png", title: "District Activities", category: "District Activities" },
+    { image: "/District acrivities/page_108_img_008.png", title: "District Activities", category: "District Activities" },
   ];
 
   // Tree Plantation photos - Commented out until images are added to public/Tree plantation folder
@@ -60,7 +60,7 @@ export default function EventsGallery() {
           <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
             <div className="relative aspect-square">
               <Image
-                src={`/${photo.image}`}
+                src={photo.image}
                 alt={photo.title}
                 fill
                 className="object-cover"

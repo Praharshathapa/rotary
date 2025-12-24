@@ -7,24 +7,23 @@ export default function GalleryPhotos() {
   // Select a mix of photos from different gallery sections
   const galleryPhotos = [
     // Events
-    { image: "Installation ceremony/page_105_img_001.png", title: "Installation Ceremony", category: "Events", link: "/gallery/events" },
-    { image: "District acrivities/page_108_img_001.png", title: "District Activities", category: "Events", link: "/gallery/events" },
+    { image: "/Installation ceremony/page_105_img_001.png", title: "Installation Ceremony", category: "Events", link: "/gallery/events" },
+    { image: "/District acrivities/page_108_img_001.png", title: "District Activities", category: "Events", link: "/gallery/events" },
     // Tree Plantation removed until images are available in public/Tree plantation folder
-    // { image: "Tree plantation/page_111_img_001.png", title: "Tree Plantation", category: "Events", link: "/gallery/events" },
+    // { image: "/Tree plantation/page_111_img_001.png", title: "Tree Plantation", category: "Events", link: "/gallery/events" },
     
     // Celebrations
-    { image: "Charters day and DG visit/page_109_img_001.png", title: "Charter Day and DG Visit", category: "Celebrations", link: "/gallery/celebrations" },
-    { image: "picnic and social gathering/page_119_img_001.png", title: "Picnic and Social Gathering", category: "Celebrations", link: "/gallery/celebrations" },
+    { image: "/Charters day and DG visit/page_109_img_001.png", title: "Charter Day and DG Visit", category: "Celebrations", link: "/gallery/celebrations" },
+    { image: "/picnic and social gathering/page_119_img_001.png", title: "Picnic and Social Gathering", category: "Celebrations", link: "/gallery/celebrations" },
     
     // Meetings
-    { image: "BOD meeting/page_106_img_001.png", title: "BOD Meeting", category: "Meetings", link: "/gallery/meetings" },
-    { image: "weekly regular meeting/page_117_img_001.png", title: "Weekly Regular Meeting", category: "Meetings", link: "/gallery/meetings" },
-    { image: "Rotaract,Interact and RCC/page_115_img_001.png", title: "Rotaract, Interact and RCC", category: "Meetings", link: "/gallery/meetings" },
+    { image: "/BOD meeting/page_106_img_001.png", title: "BOD Meeting", category: "Meetings", link: "/gallery/meetings" },
+    { image: "/weekly regular meeting/page_117_img_001.png", title: "Weekly Regular Meeting", category: "Meetings", link: "/gallery/meetings" },
+    { image: "/Rotaract,Interact and RCC/page_115_img_001.png", title: "Rotaract, Interact and RCC", category: "Meetings", link: "/gallery/meetings" },
     
-    // Projects - Using placeholder until images are added
-    { image: "/images/rotarylogo.png", title: "PCOS Awareness Program", category: "Projects", link: "/gallery/projects" },
-    { image: "Education Support(Service Projects)/page_112_img_001.png", title: "Education Support Project", category: "Projects", link: "/gallery/projects" },
-    { image: "global grant/page_114_img_001.png", title: "Global Grant Project", category: "Projects", link: "/gallery/projects" },
+    // Projects
+    { image: "/Education Support(Service Projects)/page_112_img_001.png", title: "Education Support Project", category: "Projects", link: "/gallery/projects" },
+    { image: "/global grant/page_114_img_001.png", title: "Global Grant Project", category: "Projects", link: "/gallery/projects" },
   ];
 
   return (
@@ -44,7 +43,7 @@ export default function GalleryPhotos() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer h-full">
                 <div className="relative aspect-square">
                   <Image
-                    src={photo.image.startsWith('/') ? photo.image : `/${photo.image}`}
+                    src={photo.image}
                     alt={photo.title}
                     fill
                     className="object-cover"

@@ -14,69 +14,41 @@ type ProjectPhoto = {
 export default function ProjectsGallery() {
   // Education Support (Service Projects) photos
   const educationSupport: ProjectPhoto[] = [
-    { image: "Education Support(Service Projects)/page_112_img_001.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_112_img_002.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_112_img_003.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_112_img_004.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_112_img_005.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_112_img_006.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_112_img_007.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_112_img_008.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_112_img_009.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_113_img_001.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_113_img_002.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_113_img_003.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_113_img_004.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_113_img_005.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_113_img_006.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_113_img_007.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_113_img_008.png", title: "Education Support Project", category: "Education Support" },
-    { image: "Education Support(Service Projects)/page_111_img_001.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_112_img_001.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_112_img_002.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_112_img_003.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_112_img_004.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_112_img_005.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_112_img_006.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_112_img_007.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_112_img_008.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_112_img_009.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_113_img_001.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_113_img_002.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_113_img_003.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_113_img_004.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_113_img_005.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_113_img_006.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_113_img_007.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_113_img_008.png", title: "Education Support Project", category: "Education Support" },
+    { image: "/Education Support(Service Projects)/page_111_img_001.png", title: "Education Support Project", category: "Education Support" },
   ];
 
   // Global Grant photos
   const globalGrant: ProjectPhoto[] = [
-    { image: "global grant/page_114_img_001.png", title: "Global Grant Project", category: "Global Grant" },
-    { image: "global grant/page_114_img_002.png", title: "Global Grant Project", category: "Global Grant" },
-    { image: "global grant/page_114_img_003.png", title: "Global Grant Project", category: "Global Grant" },
-    { image: "global grant/page_114_img_004.png", title: "Global Grant Project", category: "Global Grant" },
-    { image: "global grant/page_114_img_005.png", title: "Global Grant Project", category: "Global Grant" },
-    { image: "global grant/page_114_img_006.png", title: "Global Grant Project", category: "Global Grant" },
-    { image: "global grant/page_114_img_007.png", title: "Global Grant Project", category: "Global Grant" },
-    { image: "global grant/page_114_img_008.png", title: "Global Grant Project", category: "Global Grant" },
-    { image: "global grant/page_114_img_009.png", title: "Global Grant Project", category: "Global Grant" },
-    { image: "global grant/page_114_img_010.png", title: "Global Grant Project", category: "Global Grant" },
+    { image: "/global grant/page_114_img_001.png", title: "Global Grant Project", category: "Global Grant" },
+    { image: "/global grant/page_114_img_002.png", title: "Global Grant Project", category: "Global Grant" },
+    { image: "/global grant/page_114_img_003.png", title: "Global Grant Project", category: "Global Grant" },
+    { image: "/global grant/page_114_img_004.png", title: "Global Grant Project", category: "Global Grant" },
+    { image: "/global grant/page_114_img_005.png", title: "Global Grant Project", category: "Global Grant" },
+    { image: "/global grant/page_114_img_006.png", title: "Global Grant Project", category: "Global Grant" },
+    { image: "/global grant/page_114_img_007.png", title: "Global Grant Project", category: "Global Grant" },
+    { image: "/global grant/page_114_img_008.png", title: "Global Grant Project", category: "Global Grant" },
+    { image: "/global grant/page_114_img_009.png", title: "Global Grant Project", category: "Global Grant" },
+    { image: "/global grant/page_114_img_010.png", title: "Global Grant Project", category: "Global Grant" },
   ];
 
-  // Existing project photos with links
-  const featuredProjects: ProjectPhoto[] = [
-    {
-      title: "Talk program on PCOS",
-      image: "/images/rotarylogo.png", // Placeholder until image is added to public/images/Projects/
-      date: "February 1, 2024",
-      description: "A comprehensive awareness program on PCOS and reproductive health",
-      // Removed link - page doesn't exist
-      category: "Health Awareness"
-    },
-    {
-      title: "Dengue Awareness Campaign",
-      image: "/images/rotarylogo.png", // Placeholder until image is added to public/images/Projects/
-      date: "2024",
-      description: "Dengue awareness programs conducted in Dang and Kathmandu",
-      // Removed link - page doesn't exist
-      category: "Health Awareness"
-    },
-    {
-      title: "Medical Accessories and Laptop Handover",
-      image: "/images/rotarylogo.png", // Placeholder until image is added to public/images/Projects/
-      date: "January 15, 2024",
-      description: "Distribution of medical equipment and laptops in Bunkot, Gorkha",
-      // Removed link - page doesn't exist
-      category: "Community Support"
-    },
-  ];
-
-  const projectPhotos = [...featuredProjects, ...educationSupport, ...globalGrant];
+  const projectPhotos = [...educationSupport, ...globalGrant];
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -95,7 +67,7 @@ export default function ProjectsGallery() {
             <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer h-full">
               <div className="relative aspect-square">
                 <Image
-                  src={photo.image.startsWith('/') ? photo.image : `/${photo.image}`}
+                  src={photo.image}
                   alt={photo.title}
                   fill
                   className="object-cover"

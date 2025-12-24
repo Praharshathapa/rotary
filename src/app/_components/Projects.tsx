@@ -7,26 +7,11 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 
-const projects = [
-  {
-    title: "Talk program on PCOS",
-    description:
-      "A talk on PCOS and reproductive health was held on February 1 at Reliance Public School, organized by the Rotary Club of Kathmandu North and its sponsored Rotaract Clubs, with Dr. Neha Guragai and Dr. Manisha Acharya from Indira Infertility Center as resource persons.",
-      image: "/images/rotarylogo.png", // Placeholder until image is added to public/images/Projects/
-  },
-  {
-    title: "Dengue Awareness Campaign",
-    description:
-      "Dengue awareness programs have  been conducted and still going on in Dang and Kathmandu by Rotary Club of Kathmandu North led by Rtn. Dr. Sugat Adhikari.",
-      image: "/images/rotarylogo.png", // Placeholder until image is added to public/images/Projects/
-  },
-  {
-    title: "Medical Accessories and laptop handover program",
-      description:
-        " Handover of medical accessories and laptops to support local health initiatives in Bunkot,Gorkha.",
-      image: "/images/rotarylogo.png", // Placeholder until image is added to public/images/Projects/
-  },
-];
+const projects: Array<{
+  title: string;
+  description: string;
+  image: string;
+}> = [];
 
 export default function Projects() {
   return (
@@ -35,8 +20,9 @@ export default function Projects() {
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-blue-900">
           Our Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+        {projects.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
             <Card key={index}>
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
@@ -53,7 +39,12 @@ export default function Projects() {
               </CardContent>
             </Card>
           ))}
-        </div>
+          </div>
+        ) : (
+          <div className="text-center py-12">
+            <p className="text-gray-500">No projects available at the moment.</p>
+          </div>
+        )}
       </div>
     </section>
   );
